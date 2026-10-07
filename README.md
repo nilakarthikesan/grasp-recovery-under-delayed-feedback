@@ -2,7 +2,7 @@
 
 **Measuring intervention value under observation staleness and hidden contact dynamics**
 
-An independent research project developed from the supplied YC Paper Club video
+Research project developed from the supplied YC Paper Club video
 on alternative computing and the YC, Oak, and Physical Intelligence builder event.
 The initial candidate asks when a physical recovery action improves task
 completion once observations are stale and execution is delayed.
