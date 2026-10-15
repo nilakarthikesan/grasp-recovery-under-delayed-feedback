@@ -13,6 +13,7 @@ supervisor that conditions on its own latency chooses better than one that
 does not.
 
 * Thesis, claims and design: [docs/SYSTEM_DESIGN.md](docs/SYSTEM_DESIGN.md)
+* Writer's notes (claims, every number and interval, decisions and the tests behind them, verified references, audit history, submission checklist): [docs/PAPER_NOTES.md](docs/PAPER_NOTES.md)
 * Original research proposal and prior-work boundaries:
   [docs/GRASP_RECOVERY_UNDER_DELAYED_FEEDBACK.md](docs/GRASP_RECOVERY_UNDER_DELAYED_FEEDBACK.md)
 * Paper draft (IEEE two-column, four pages): [paper/main.tex](paper/main.tex)
