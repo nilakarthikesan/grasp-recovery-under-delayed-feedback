@@ -1,0 +1,966 @@
+{
+ "n": 60,
+ "mismatches": 0,
+ "checks": [
+  {
+   "episode": 339,
+   "age": 2,
+   "delay": 5,
+   "lookup": {
+    "outcome": "lost",
+    "remedy": "continue",
+    "fire_step": -1
+   },
+   "live": {
+    "outcome": "lost",
+    "remedy": "continue",
+    "fire_step": -1
+   },
+   "match": true
+  },
+  {
+   "episode": 98,
+   "age": 0,
+   "delay": 0,
+   "lookup": {
+    "outcome": "placed",
+    "remedy": "squeeze",
+    "fire_step": 45
+   },
+   "live": {
+    "outcome": "placed",
+    "remedy": "squeeze",
+    "fire_step": 45
+   },
+   "match": true
+  },
+  {
+   "episode": 33,
+   "age": 0,
+   "delay": 0,
+   "lookup": {
+    "outcome": "placed",
+    "remedy": "continue",
+    "fire_step": -1
+   },
+   "live": {
+    "outcome": "placed",
+    "remedy": "continue",
+    "fire_step": -1
+   },
+   "match": true
+  },
+  {
+   "episode": 333,
+   "age": 2,
+   "delay": 10,
+   "lookup": {
+    "outcome": "placed",
+    "remedy": "continue",
+    "fire_step": -1
+   },
+   "live": {
+    "outcome": "placed",
+    "remedy": "continue",
+    "fire_step": -1
+   },
+   "match": true
+  },
+  {
+   "episode": 202,
+   "age": 2,
+   "delay": 10,
+   "lookup": {
+    "outcome": "placed",
+    "remedy": "continue",
+    "fire_step": -1
+   },
+   "live": {
+    "outcome": "placed",
+    "remedy": "continue",
+    "fire_step": -1
+   },
+   "match": true
+  },
+  {
+   "episode": 294,
+   "age": 2,
+   "delay": 5,
+   "lookup": {
+    "outcome": "placed",
+    "remedy": "continue",
+    "fire_step": -1
+   },
+   "live": {
+    "outcome": "placed",
+    "remedy": "continue",
+    "fire_step": -1
+   },
+   "match": true
+  },
+  {
+   "episode": 225,
+   "age": 5,
+   "delay": 2,
+   "lookup": {
+    "outcome": "lost",
+    "remedy": "continue",
+    "fire_step": -1
+   },
+   "live": {
+    "outcome": "lost",
+    "remedy": "continue",
+    "fire_step": -1
+   },
+   "match": true
+  },
+  {
+   "episode": 333,
+   "age": 5,
+   "delay": 0,
+   "lookup": {
+    "outcome": "placed",
+    "remedy": "continue",
+    "fire_step": -1
+   },
+   "live": {
+    "outcome": "placed",
+    "remedy": "continue",
+    "fire_step": -1
+   },
+   "match": true
+  },
+  {
+   "episode": 162,
+   "age": 5,
+   "delay": 5,
+   "lookup": {
+    "outcome": "placed",
+    "remedy": "continue",
+    "fire_step": -1
+   },
+   "live": {
+    "outcome": "placed",
+    "remedy": "continue",
+    "fire_step": -1
+   },
+   "match": true
+  },
+  {
+   "episode": 28,
+   "age": 5,
+   "delay": 5,
+   "lookup": {
+    "outcome": "placed",
+    "remedy": "continue",
+    "fire_step": -1
+   },
+   "live": {
+    "outcome": "placed",
+    "remedy": "continue",
+    "fire_step": -1
+   },
+   "match": true
+  },
+  {
+   "episode": 339,
+   "age": 0,
+   "delay": 0,
+   "lookup": {
+    "outcome": "placed",
+    "remedy": "squeeze",
+    "fire_step": 38
+   },
+   "live": {
+    "outcome": "placed",
+    "remedy": "squeeze",
+    "fire_step": 38
+   },
+   "match": true
+  },
+  {
+   "episode": 341,
+   "age": 0,
+   "delay": 5,
+   "lookup": {
+    "outcome": "placed",
+    "remedy": "squeeze",
+    "fire_step": 26
+   },
+   "live": {
+    "outcome": "placed",
+    "remedy": "squeeze",
+    "fire_step": 26
+   },
+   "match": true
+  },
+  {
+   "episode": 33,
+   "age": 0,
+   "delay": 2,
+   "lookup": {
+    "outcome": "placed",
+    "remedy": "continue",
+    "fire_step": -1
+   },
+   "live": {
+    "outcome": "placed",
+    "remedy": "continue",
+    "fire_step": -1
+   },
+   "match": true
+  },
+  {
+   "episode": 173,
+   "age": 2,
+   "delay": 0,
+   "lookup": {
+    "outcome": "placed",
+    "remedy": "place_regrasp",
+    "fire_step": 24
+   },
+   "live": {
+    "outcome": "placed",
+    "remedy": "place_regrasp",
+    "fire_step": 24
+   },
+   "match": true
+  },
+  {
+   "episode": 4,
+   "age": 0,
+   "delay": 0,
+   "lookup": {
+    "outcome": "placed",
+    "remedy": "squeeze",
+    "fire_step": 24
+   },
+   "live": {
+    "outcome": "placed",
+    "remedy": "squeeze",
+    "fire_step": 24
+   },
+   "match": true
+  },
+  {
+   "episode": 263,
+   "age": 2,
+   "delay": 5,
+   "lookup": {
+    "outcome": "placed",
+    "remedy": "continue",
+    "fire_step": -1
+   },
+   "live": {
+    "outcome": "placed",
+    "remedy": "continue",
+    "fire_step": -1
+   },
+   "match": true
+  },
+  {
+   "episode": 96,
+   "age": 2,
+   "delay": 10,
+   "lookup": {
+    "outcome": "placed",
+    "remedy": "squeeze",
+    "fire_step": 24
+   },
+   "live": {
+    "outcome": "placed",
+    "remedy": "squeeze",
+    "fire_step": 24
+   },
+   "match": true
+  },
+  {
+   "episode": 157,
+   "age": 2,
+   "delay": 10,
+   "lookup": {
+    "outcome": "placed",
+    "remedy": "squeeze",
+    "fire_step": 24
+   },
+   "live": {
+    "outcome": "placed",
+    "remedy": "squeeze",
+    "fire_step": 24
+   },
+   "match": true
+  },
+  {
+   "episode": 331,
+   "age": 5,
+   "delay": 2,
+   "lookup": {
+    "outcome": "placed",
+    "remedy": "continue",
+    "fire_step": -1
+   },
+   "live": {
+    "outcome": "placed",
+    "remedy": "continue",
+    "fire_step": -1
+   },
+   "match": true
+  },
+  {
+   "episode": 267,
+   "age": 5,
+   "delay": 5,
+   "lookup": {
+    "outcome": "placed",
+    "remedy": "squeeze",
+    "fire_step": 34
+   },
+   "live": {
+    "outcome": "placed",
+    "remedy": "squeeze",
+    "fire_step": 34
+   },
+   "match": true
+  },
+  {
+   "episode": 338,
+   "age": 5,
+   "delay": 5,
+   "lookup": {
+    "outcome": "placed",
+    "remedy": "continue",
+    "fire_step": -1
+   },
+   "live": {
+    "outcome": "placed",
+    "remedy": "continue",
+    "fire_step": -1
+   },
+   "match": true
+  },
+  {
+   "episode": 157,
+   "age": 5,
+   "delay": 0,
+   "lookup": {
+    "outcome": "placed",
+    "remedy": "place_regrasp",
+    "fire_step": 24
+   },
+   "live": {
+    "outcome": "placed",
+    "remedy": "place_regrasp",
+    "fire_step": 24
+   },
+   "match": true
+  },
+  {
+   "episode": 228,
+   "age": 5,
+   "delay": 10,
+   "lookup": {
+    "outcome": "lost",
+    "remedy": "place_regrasp",
+    "fire_step": 30
+   },
+   "live": {
+    "outcome": "lost",
+    "remedy": "place_regrasp",
+    "fire_step": 30
+   },
+   "match": true
+  },
+  {
+   "episode": 218,
+   "age": 2,
+   "delay": 2,
+   "lookup": {
+    "outcome": "placed",
+    "remedy": "continue",
+    "fire_step": -1
+   },
+   "live": {
+    "outcome": "placed",
+    "remedy": "continue",
+    "fire_step": -1
+   },
+   "match": true
+  },
+  {
+   "episode": 173,
+   "age": 2,
+   "delay": 5,
+   "lookup": {
+    "outcome": "placed",
+    "remedy": "squeeze",
+    "fire_step": 24
+   },
+   "live": {
+    "outcome": "placed",
+    "remedy": "squeeze",
+    "fire_step": 24
+   },
+   "match": true
+  },
+  {
+   "episode": 349,
+   "age": 0,
+   "delay": 10,
+   "lookup": {
+    "outcome": "placed",
+    "remedy": "continue",
+    "fire_step": -1
+   },
+   "live": {
+    "outcome": "placed",
+    "remedy": "continue",
+    "fire_step": -1
+   },
+   "match": true
+  },
+  {
+   "episode": 218,
+   "age": 2,
+   "delay": 5,
+   "lookup": {
+    "outcome": "placed",
+    "remedy": "continue",
+    "fire_step": -1
+   },
+   "live": {
+    "outcome": "placed",
+    "remedy": "continue",
+    "fire_step": -1
+   },
+   "match": true
+  },
+  {
+   "episode": 226,
+   "age": 0,
+   "delay": 2,
+   "lookup": {
+    "outcome": "placed",
+    "remedy": "squeeze",
+    "fire_step": 25
+   },
+   "live": {
+    "outcome": "placed",
+    "remedy": "squeeze",
+    "fire_step": 25
+   },
+   "match": true
+  },
+  {
+   "episode": 287,
+   "age": 2,
+   "delay": 5,
+   "lookup": {
+    "outcome": "placed",
+    "remedy": "squeeze",
+    "fire_step": 25
+   },
+   "live": {
+    "outcome": "placed",
+    "remedy": "squeeze",
+    "fire_step": 25
+   },
+   "match": true
+  },
+  {
+   "episode": 128,
+   "age": 5,
+   "delay": 2,
+   "lookup": {
+    "outcome": "placed",
+    "remedy": "squeeze",
+    "fire_step": 30
+   },
+   "live": {
+    "outcome": "placed",
+    "remedy": "squeeze",
+    "fire_step": 30
+   },
+   "match": true
+  },
+  {
+   "episode": 121,
+   "age": 5,
+   "delay": 2,
+   "lookup": {
+    "outcome": "lost",
+    "remedy": "continue",
+    "fire_step": -1
+   },
+   "live": {
+    "outcome": "lost",
+    "remedy": "continue",
+    "fire_step": -1
+   },
+   "match": true
+  },
+  {
+   "episode": 86,
+   "age": 5,
+   "delay": 5,
+   "lookup": {
+    "outcome": "lost",
+    "remedy": "place_regrasp",
+    "fire_step": 43
+   },
+   "live": {
+    "outcome": "lost",
+    "remedy": "place_regrasp",
+    "fire_step": 43
+   },
+   "match": true
+  },
+  {
+   "episode": 29,
+   "age": 0,
+   "delay": 2,
+   "lookup": {
+    "outcome": "placed",
+    "remedy": "squeeze",
+    "fire_step": 46
+   },
+   "live": {
+    "outcome": "placed",
+    "remedy": "squeeze",
+    "fire_step": 46
+   },
+   "match": true
+  },
+  {
+   "episode": 338,
+   "age": 2,
+   "delay": 10,
+   "lookup": {
+    "outcome": "placed",
+    "remedy": "continue",
+    "fire_step": -1
+   },
+   "live": {
+    "outcome": "placed",
+    "remedy": "continue",
+    "fire_step": -1
+   },
+   "match": true
+  },
+  {
+   "episode": 111,
+   "age": 0,
+   "delay": 10,
+   "lookup": {
+    "outcome": "placed",
+    "remedy": "squeeze",
+    "fire_step": 29
+   },
+   "live": {
+    "outcome": "placed",
+    "remedy": "squeeze",
+    "fire_step": 29
+   },
+   "match": true
+  },
+  {
+   "episode": 345,
+   "age": 0,
+   "delay": 0,
+   "lookup": {
+    "outcome": "placed",
+    "remedy": "continue",
+    "fire_step": -1
+   },
+   "live": {
+    "outcome": "placed",
+    "remedy": "continue",
+    "fire_step": -1
+   },
+   "match": true
+  },
+  {
+   "episode": 263,
+   "age": 2,
+   "delay": 5,
+   "lookup": {
+    "outcome": "placed",
+    "remedy": "continue",
+    "fire_step": -1
+   },
+   "live": {
+    "outcome": "placed",
+    "remedy": "continue",
+    "fire_step": -1
+   },
+   "match": true
+  },
+  {
+   "episode": 67,
+   "age": 5,
+   "delay": 2,
+   "lookup": {
+    "outcome": "placed",
+    "remedy": "continue",
+    "fire_step": -1
+   },
+   "live": {
+    "outcome": "placed",
+    "remedy": "continue",
+    "fire_step": -1
+   },
+   "match": true
+  },
+  {
+   "episode": 354,
+   "age": 5,
+   "delay": 5,
+   "lookup": {
+    "outcome": "placed",
+    "remedy": "squeeze",
+    "fire_step": 26
+   },
+   "live": {
+    "outcome": "placed",
+    "remedy": "squeeze",
+    "fire_step": 26
+   },
+   "match": true
+  },
+  {
+   "episode": 86,
+   "age": 5,
+   "delay": 0,
+   "lookup": {
+    "outcome": "placed",
+    "remedy": "squeeze",
+    "fire_step": 43
+   },
+   "live": {
+    "outcome": "placed",
+    "remedy": "squeeze",
+    "fire_step": 43
+   },
+   "match": true
+  },
+  {
+   "episode": 226,
+   "age": 2,
+   "delay": 10,
+   "lookup": {
+    "outcome": "placed",
+    "remedy": "squeeze",
+    "fire_step": 27
+   },
+   "live": {
+    "outcome": "placed",
+    "remedy": "squeeze",
+    "fire_step": 27
+   },
+   "match": true
+  },
+  {
+   "episode": 77,
+   "age": 5,
+   "delay": 0,
+   "lookup": {
+    "outcome": "placed",
+    "remedy": "squeeze",
+    "fire_step": 34
+   },
+   "live": {
+    "outcome": "placed",
+    "remedy": "squeeze",
+    "fire_step": 34
+   },
+   "match": true
+  },
+  {
+   "episode": 240,
+   "age": 2,
+   "delay": 10,
+   "lookup": {
+    "outcome": "placed",
+    "remedy": "continue",
+    "fire_step": -1
+   },
+   "live": {
+    "outcome": "placed",
+    "remedy": "continue",
+    "fire_step": -1
+   },
+   "match": true
+  },
+  {
+   "episode": 108,
+   "age": 5,
+   "delay": 5,
+   "lookup": {
+    "outcome": "placed",
+    "remedy": "place_regrasp",
+    "fire_step": 24
+   },
+   "live": {
+    "outcome": "placed",
+    "remedy": "place_regrasp",
+    "fire_step": 24
+   },
+   "match": true
+  },
+  {
+   "episode": 349,
+   "age": 0,
+   "delay": 10,
+   "lookup": {
+    "outcome": "placed",
+    "remedy": "continue",
+    "fire_step": -1
+   },
+   "live": {
+    "outcome": "placed",
+    "remedy": "continue",
+    "fire_step": -1
+   },
+   "match": true
+  },
+  {
+   "episode": 365,
+   "age": 0,
+   "delay": 2,
+   "lookup": {
+    "outcome": "placed",
+    "remedy": "squeeze",
+    "fire_step": 27
+   },
+   "live": {
+    "outcome": "placed",
+    "remedy": "squeeze",
+    "fire_step": 27
+   },
+   "match": true
+  },
+  {
+   "episode": 241,
+   "age": 0,
+   "delay": 5,
+   "lookup": {
+    "outcome": "placed",
+    "remedy": "continue",
+    "fire_step": -1
+   },
+   "live": {
+    "outcome": "placed",
+    "remedy": "continue",
+    "fire_step": -1
+   },
+   "match": true
+  },
+  {
+   "episode": 241,
+   "age": 5,
+   "delay": 10,
+   "lookup": {
+    "outcome": "placed",
+    "remedy": "continue",
+    "fire_step": -1
+   },
+   "live": {
+    "outcome": "placed",
+    "remedy": "continue",
+    "fire_step": -1
+   },
+   "match": true
+  },
+  {
+   "episode": 165,
+   "age": 2,
+   "delay": 2,
+   "lookup": {
+    "outcome": "lost",
+    "remedy": "continue",
+    "fire_step": -1
+   },
+   "live": {
+    "outcome": "lost",
+    "remedy": "continue",
+    "fire_step": -1
+   },
+   "match": true
+  },
+  {
+   "episode": 372,
+   "age": 0,
+   "delay": 2,
+   "lookup": {
+    "outcome": "placed",
+    "remedy": "continue",
+    "fire_step": -1
+   },
+   "live": {
+    "outcome": "placed",
+    "remedy": "continue",
+    "fire_step": -1
+   },
+   "match": true
+  },
+  {
+   "episode": 29,
+   "age": 2,
+   "delay": 10,
+   "lookup": {
+    "outcome": "placed",
+    "remedy": "continue",
+    "fire_step": -1
+   },
+   "live": {
+    "outcome": "placed",
+    "remedy": "continue",
+    "fire_step": -1
+   },
+   "match": true
+  },
+  {
+   "episode": 240,
+   "age": 2,
+   "delay": 10,
+   "lookup": {
+    "outcome": "placed",
+    "remedy": "continue",
+    "fire_step": -1
+   },
+   "live": {
+    "outcome": "placed",
+    "remedy": "continue",
+    "fire_step": -1
+   },
+   "match": true
+  },
+  {
+   "episode": 236,
+   "age": 5,
+   "delay": 0,
+   "lookup": {
+    "outcome": "placed",
+    "remedy": "place_regrasp",
+    "fire_step": 24
+   },
+   "live": {
+    "outcome": "placed",
+    "remedy": "place_regrasp",
+    "fire_step": 24
+   },
+   "match": true
+  },
+  {
+   "episode": 187,
+   "age": 5,
+   "delay": 10,
+   "lookup": {
+    "outcome": "placed",
+    "remedy": "continue",
+    "fire_step": -1
+   },
+   "live": {
+    "outcome": "placed",
+    "remedy": "continue",
+    "fire_step": -1
+   },
+   "match": true
+  },
+  {
+   "episode": 165,
+   "age": 2,
+   "delay": 2,
+   "lookup": {
+    "outcome": "lost",
+    "remedy": "continue",
+    "fire_step": -1
+   },
+   "live": {
+    "outcome": "lost",
+    "remedy": "continue",
+    "fire_step": -1
+   },
+   "match": true
+  },
+  {
+   "episode": 218,
+   "age": 0,
+   "delay": 10,
+   "lookup": {
+    "outcome": "placed",
+    "remedy": "continue",
+    "fire_step": -1
+   },
+   "live": {
+    "outcome": "placed",
+    "remedy": "continue",
+    "fire_step": -1
+   },
+   "match": true
+  },
+  {
+   "episode": 33,
+   "age": 2,
+   "delay": 2,
+   "lookup": {
+    "outcome": "placed",
+    "remedy": "continue",
+    "fire_step": -1
+   },
+   "live": {
+    "outcome": "placed",
+    "remedy": "continue",
+    "fire_step": -1
+   },
+   "match": true
+  },
+  {
+   "episode": 299,
+   "age": 5,
+   "delay": 5,
+   "lookup": {
+    "outcome": "placed",
+    "remedy": "continue",
+    "fire_step": -1
+   },
+   "live": {
+    "outcome": "placed",
+    "remedy": "continue",
+    "fire_step": -1
+   },
+   "match": true
+  },
+  {
+   "episode": 361,
+   "age": 5,
+   "delay": 0,
+   "lookup": {
+    "outcome": "placed",
+    "remedy": "continue",
+    "fire_step": -1
+   },
+   "live": {
+    "outcome": "placed",
+    "remedy": "continue",
+    "fire_step": -1
+   },
+   "match": true
+  },
+  {
+   "episode": 47,
+   "age": 0,
+   "delay": 5,
+   "lookup": {
+    "outcome": "placed",
+    "remedy": "squeeze",
+    "fire_step": 24
+   },
+   "live": {
+    "outcome": "placed",
+    "remedy": "squeeze",
+    "fire_step": 24
+   },
+   "match": true
+  }
+ ]
+}

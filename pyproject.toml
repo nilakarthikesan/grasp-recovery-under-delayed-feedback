@@ -1,0 +1,29 @@
+[project]
+name = "delayed-recovery"
+version = "0.1.0"
+description = "Grasp recovery under delayed feedback: latency-conditioned intervention value in a standalone MuJoCo grasp-transport-place task"
+requires-python = ">=3.11"
+dependencies = [
+  "mujoco>=3.2",
+  "numpy>=1.26",
+  "scipy>=1.11",
+  "scikit-learn>=1.4",
+  "matplotlib>=3.8",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+delayed_recovery = ["assets/*.xml"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

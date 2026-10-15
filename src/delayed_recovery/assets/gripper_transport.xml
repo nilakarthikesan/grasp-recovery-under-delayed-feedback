@@ -1,0 +1,100 @@
+<mujoco model="gripper_transport_v1">
+  <!--
+    Minimal grasp-lift-transport-place task.
+
+    A Cartesian carrier (prismatic x/z joints, position servos with gravity
+    compensation of the carrier's own mass) carries a parallel-jaw gripper whose
+    two fingers are force-controlled motors. A rigid cube with hidden mass and
+    friction rests on a table and must be placed in a target region. The
+    carrier models an ideal arm-level position controller; the gripper models
+    a force-limited parallel-jaw actuator.
+
+    Friction combination in MuJoCo takes the element-wise maximum of the two
+    geoms (equal priority), so the table and finger pads use a very low value
+    and the object's friction coefficient determines every contact involving
+    the object. The effective value is read back from data.contact at runtime.
+  -->
+  <compiler angle="radian" autolimits="true"/>
+  <option timestep="0.002" integrator="implicitfast" gravity="0 0 -9.81" cone="elliptic" impratio="10"/>
+
+  <default>
+    <geom condim="4" solref="0.01 1" solimp="0.95 0.99 0.001"/>
+    <joint damping="0"/>
+    <default class="carrier">
+      <joint type="slide" damping="80"/>
+    </default>
+    <default class="finger">
+      <joint type="slide" damping="4" range="0 0.038"/>
+      <geom type="box" friction="0.05 0.005 0.0001" rgba="0.2 0.2 0.25 1"/>
+    </default>
+  </default>
+
+  <visual>
+    <global offwidth="640" offheight="480"/>
+  </visual>
+
+  <worldbody>
+    <light pos="0.2 -0.5 1.0" dir="-0.2 0.5 -1" diffuse="0.8 0.8 0.8"/>
+    <camera name="side" pos="0.22 -1.0 0.35" xyaxes="1 0 0 0 0.35 0.94" fovy="45"/>
+
+    <!-- table top surface at z = 0 -->
+    <geom name="table" type="box" pos="0.2 0 -0.02" size="0.6 0.3 0.02" friction="0.05 0.005 0.0001" rgba="0.75 0.7 0.6 1"/>
+    <site name="target" pos="0.45 0 0.0005" size="0.03 0.03 0.0005" type="box" rgba="0.2 0.8 0.3 0.4"/>
+
+    <!-- object: 4 cm cube; mass, inertia and friction are overwritten per episode -->
+    <body name="object" pos="0 0 0.02">
+      <freejoint name="object_free"/>
+      <geom name="object_geom" type="box" size="0.02 0.02 0.02" mass="0.3" friction="0.6 0.005 0.0001" rgba="0.85 0.3 0.2 1"/>
+    </body>
+
+    <!-- Cartesian carrier -->
+    <body name="carrier_x" pos="0 0 0.30" gravcomp="1">
+      <joint name="carrier_x" class="carrier" axis="1 0 0" range="-0.2 0.7"/>
+      <geom type="box" size="0.03 0.03 0.01" mass="1.0" rgba="0.5 0.5 0.55 1" contype="0" conaffinity="0"/>
+      <body name="carrier_z" pos="0 0 0" gravcomp="1">
+        <joint name="carrier_z" class="carrier" axis="0 0 1" range="-0.30 0.05"/>
+        <geom type="box" size="0.025 0.025 0.01" mass="0.8" rgba="0.5 0.5 0.55 1" contype="0" conaffinity="0"/>
+        <!-- gripper base (child of carrier_z, welded): wrist F/T sensor site -->
+        <body name="gripper_base" pos="0 0 -0.03" gravcomp="1">
+          <geom type="box" size="0.02 0.05 0.01" mass="0.4" rgba="0.3 0.3 0.35 1" contype="0" conaffinity="0"/>
+          <site name="wrist" pos="0 0 0" size="0.005" rgba="1 1 0 0.5"/>
+          <site name="tcp" pos="0 0 -0.045" size="0.004" rgba="0 1 1 0.5"/>
+          <!-- fingers: inner pad face sits at |y| = 0.040 - q, so a 4 cm cube is contacted at q = 0.020 -->
+          <body name="finger_left" pos="0 0.0425 -0.045" gravcomp="1">
+            <joint name="finger_left" class="finger" axis="0 -1 0"/>
+            <geom name="pad_left" class="finger" size="0.008 0.0025 0.030" mass="0.05"/>
+          </body>
+          <body name="finger_right" pos="0 -0.0425 -0.045" gravcomp="1">
+            <joint name="finger_right" class="finger" axis="0 1 0"/>
+            <geom name="pad_right" class="finger" size="0.008 0.0025 0.030" mass="0.05"/>
+          </body>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+
+  <actuator>
+    <!-- arm-level position servos (ideal Cartesian controller) -->
+    <position name="act_carrier_x" joint="carrier_x" kp="2500" ctrlrange="-0.2 0.7"/>
+    <position name="act_carrier_z" joint="carrier_z" kp="2500" ctrlrange="-0.30 0.05"/>
+    <!-- force-controlled fingers: positive command closes -->
+    <motor name="act_finger_left" joint="finger_left" ctrlrange="-3 7"/>
+    <motor name="act_finger_right" joint="finger_right" ctrlrange="-3 7"/>
+  </actuator>
+
+  <sensor>
+    <!-- deployable proprioception and wrist force/torque -->
+    <jointpos name="q_carrier_x" joint="carrier_x"/>
+    <jointpos name="q_carrier_z" joint="carrier_z"/>
+    <jointvel name="dq_carrier_x" joint="carrier_x"/>
+    <jointvel name="dq_carrier_z" joint="carrier_z"/>
+    <jointpos name="q_finger_left" joint="finger_left"/>
+    <jointpos name="q_finger_right" joint="finger_right"/>
+    <jointvel name="dq_finger_left" joint="finger_left"/>
+    <jointvel name="dq_finger_right" joint="finger_right"/>
+    <actuatorfrc name="f_finger_left" actuator="act_finger_left"/>
+    <actuatorfrc name="f_finger_right" actuator="act_finger_right"/>
+    <force name="wrist_force" site="wrist"/>
+    <torque name="wrist_torque" site="wrist"/>
+  </sensor>
+</mujoco>
