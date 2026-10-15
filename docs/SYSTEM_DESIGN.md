@@ -163,7 +163,14 @@ point ablation is 2 × 2: {delay-agnostic, delay-aware} × {pooled, per-cell}.
 Episode-level split 50/20/30 of acquired parent episodes; all decisions,
 ages and branches of an episode stay together. A secondary held-out friction
 band (0.50–0.58) checks interpolation to unseen physics. Uncertainty: paired
-bootstrap over parent episodes (2000 resamples); cells are not independent.
+**cluster** bootstrap (2000 resamples) whose resampling unit is the parent
+episode, so the 12 timing cells of an episode are drawn together. (An earlier
+version resampled episode × cell rows, which under-stated pooled uncertainty
+by about √12; this was found in an external audit and fixed. The random
+baseline's CI is computed on the 10-seed-averaged per-row completion so that
+it estimates the same quantity as the reported mean.) Per-episode, per-cell
+outcomes for every supervisor are exported to
+`results/pilot_v1/episode_cell_outcomes.csv` for independent recomputation.
 Metrics: completion, paired gain vs nominal, intervention rate, rescue rate,
 harm rate (interventions that turned a nominal success into a non-success),
 unnecessary rate, median lead time.
@@ -182,28 +189,39 @@ every claim.
 400 episodes, 314 acquired, 100 lost nominally; 7,394 decision states,
 88,728 branches; split 157/63/94; 60/60 live re-simulations match the lookup.
 
-* **Claim 1 supported.** 50 %-recovery deadlines (decision lead before nominal
-  loss) at delays 0/100/250/500 ms: squeeze 50/150/300/550 ms, place/regrasp
-  350/450/600/850 ms; slow never exceeds 33 % of lost states. The privileged
-  menu oracle completes 100 % of test episodes at every delay while
-  intervening in 32 %, so every nominal loss was physically recoverable.
+* **Claim 1 supported.** A remedy's deadline is defined as the smallest lead
+  bin (≥ 20 states) with ≥ 50 % recovery. At delays 0/100/250/500 ms:
+  squeeze 50/150/300/550 ms, place/regrasp 350/450/600/850 ms. Slow has no
+  deadline by this definition; pooled over lost states it recovers
+  22/19/16/9 % (it reaches 50 % only in two 10-state bins at 1.15–1.2 s lead).
+  The privileged menu oracle completes 100 % of the 94 test episodes at every
+  delay while intervening in the 30 nominally lost ones (32 %), so within this
+  task and menu every nominal test loss was recoverable.
 * **Claim 2 supported.** The delay-aware selector lowers its intervention
-  rate with delay (0.48 → 0.37) and shifts toward place/regrasp with 250 ms-old
-  evidence (22 of 44 interventions at zero delay vs 1 of 41 for the agnostic
-  selector at fresh evidence). Reactive slip detection + squeeze collapses
+  rate with delay (0.472 → 0.379, averaged over ages) and shifts toward
+  place/regrasp with 250 ms-old evidence (22 of 44 interventions at zero
+  delay, 17 of 36 at 500 ms, vs 13 of 43 for the agnostic selector). Reactive slip detection + squeeze collapses
   from 1.00 to 0.72 across the grid; anticipatory supervisors span 0.99 → 0.87.
 * **Claim 3 not supported.** Pooled test completion: nominal 0.681, random
   0.739, reactive 0.852, future-loss + squeeze 0.946, value delay-agnostic
-  0.934, value delay-aware 0.930, oracle 1.000. Aware − agnostic
-  −0.4 pt [−1.0, +0.3]; aware − future-loss −1.6 pt [−2.4, −0.9]. Per-cell
-  thresholds do not change the ordering. Held-out friction band 0.50–0.58
-  (n = 64): nominal 0.562, future-loss 0.814, agnostic 0.829, aware 0.812,
-  oracle 1.000.
+  0.934, value delay-aware 0.930, oracle 1.000. Episode-clustered 95 % CIs:
+  aware − agnostic −0.4 pt [−1.8, +0.8]; aware − future-loss −1.6 pt
+  [−3.5, −0.2]. Per-cell thresholds do not change this (−0.6 [−1.9, +0.4],
+  −0.4 [−1.9, +1.2]). Held-out friction band 0.50–0.58 (n = 64): nominal
+  0.5625, future-loss 0.814, agnostic 0.829, aware 0.8125, oracle 1.000; here
+  agnostic edges out future-loss, so that ordering is not stable. Aware −
+  agnostic on the band −1.7 pt [−3.8, 0.0].
 * **Feedback nulls** (delay-aware selector, test): frozen 0.810
-  (−12.0 pt), mismatched 0.838 (−9.2), masked 0.894 (−3.6, degenerate: fires in
-  all or no episodes of a cell depending only on timing inputs).
+  (−12.0 pt [−17.8, −6.6]), mismatched 0.838 (−9.2 [−16.8, −1.4]), masked
+  0.894 (−3.6 [−7.6, +0.7]; degenerate: fires in all or no episodes of a cell
+  depending only on timing inputs, so not an equal-budget comparator).
 * **Inference** on one Apple M4 core: detectors 2.9–3.3 ms median, value
   selectors 11.6 ms median (p95 22 ms); all inside one 50 ms control step.
+
+Collection statistics now in `report.json["config"]["collection"]`: 7,394
+decision states, 88,728 branches, slip-onset-to-loss 1–19 steps (median 7),
+77 of 100 nominal losses at or after the push onset, losses in transport 73 /
+lower 27.
 
 Interpretation for the paper: the measurable contribution is the protocol,
 the remedy-specific deadlines, the reactive-vs-anticipatory divergence under

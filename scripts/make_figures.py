@@ -42,18 +42,23 @@ def fig_frontier(rep, out):
     frac = np.array(fr["fraction_placed"])
     delays = fr["delays"]
     remedies = fr["remedies"]
+    count = np.array(fr["count"])
+    min_bin = rep.get("remedy_deadline_min_bin_states", 20)
+    sparse = count < min_bin
     fig, axes = plt.subplots(1, 3, figsize=(7.0, 1.7), sharey=True)
     for ax, r in zip(axes, [i for i, n in enumerate(remedies) if n != "continue"]):
         for k, d in enumerate(delays):
-            ax.plot(lead, frac[:, r, k], marker=".", ms=3, lw=1, label=f"delay {d * DT_MS} ms")
+            ax.plot(lead[~sparse], frac[~sparse, r, k], marker=".", ms=3, lw=1, label=f"delay {d * DT_MS} ms")
+            ax.plot(lead[sparse], frac[sparse, r, k], marker=".", ms=3, lw=1, ls=":", color=ax.lines[-1].get_color(), alpha=0.6)
         ax.set_title(remedies[r].replace("_", "/"), fontsize=7)
         ax.set_xlabel("decision lead before nominal loss [ms]")
         ax.invert_xaxis()
         ax.grid(alpha=0.3)
     axes[0].set_ylabel("fraction of states recovered")
-    axes[0].legend(loc="lower left")
-    fig.tight_layout()
-    fig.savefig(out / "fig_frontier.pdf")
+    handles, labels = axes[0].get_legend_handles_labels()
+    fig.legend(handles, labels, loc="lower center", ncol=4, frameon=False, bbox_to_anchor=(0.5, -0.03))
+    fig.tight_layout(rect=(0, 0.1, 1, 1))
+    fig.savefig(out / "fig_frontier.pdf", bbox_inches="tight")
     plt.close(fig)
 
 
@@ -61,7 +66,7 @@ def fig_grid(rep, out):
     ages = rep["config"]["ages_steps"]
     delays = rep["config"]["delays_steps"]
     res = rep["results"]
-    fig, axes = plt.subplots(1, len(ages), figsize=(7.0, 1.95), sharey=True)
+    fig, axes = plt.subplots(1, len(ages), figsize=(7.0, 1.65), sharey=True)
     for ax, a in zip(axes, ages):
         for name in ("nominal", "random_budget", "reactive_slip+squeeze", "failure_predictor+squeeze", "value_delay_agnostic", "value_delay_aware", "oracle_menu"):
             ys = [res[name]["cells"][f"age{a}_delay{d}"]["completion"] for d in delays]
@@ -81,7 +86,7 @@ def fig_budget(rep, out):
     curves = rep["budget_curves_test"]
     nominal = rep["results"]["nominal"]["pooled"]["completion"]
     oracle = rep["results"]["oracle_menu"]["pooled"]
-    fig, ax = plt.subplots(figsize=(3.4, 1.75))
+    fig, ax = plt.subplots(figsize=(3.4, 1.6))
     for name, curve in curves.items():
         xs = [c["intervention_rate"] for c in curve]
         ys = [c["completion"] for c in curve]

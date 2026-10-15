@@ -18,6 +18,7 @@ import numpy as np
 
 from delayed_recovery import config as C
 from delayed_recovery.collect import load_dataset
+from delayed_recovery.controller import PHASES
 from delayed_recovery.dataset import OUT_LOST, OUT_PLACED, R_CONT, build_decision_table, split_episodes, subset
 from delayed_recovery.evaluate import (
     CellResult,
@@ -76,12 +77,37 @@ def main() -> None:
     print(f"episodes={len(logs)} acquired={len(acquired)} outcomes={outcomes}")
     print(f"decision rows: train={len(train.step)} val={len(val.step)} test={len(test.step)}")
 
+    # Raw collection counts and failure-development statistics (from the
+    # per-episode branch files, so they are auditable from report.json alone).
+    n_states = int(sum(len(l["decision_steps"]) for l in acquired))
+    n_branches = int(sum(l["branch_outcome"][:, 1:, :].size for l in acquired))
+    lost = [l for l in acquired if l["outcome"] == "lost"]
+    slip_windows = [int(l["loss_step"] - l["first_slip_step"]) for l in lost if l["first_slip_step"] >= 0]
+    push_onset = [int(l["transport_start_step"] + l["condition"]["disturb_offset"]) for l in lost]
+    collection_stats = {
+        "n_decision_states": n_states,
+        "n_branches": n_branches,
+        "n_lost_with_slip_onset": len(slip_windows),
+        "slip_onset_to_loss_steps": {
+            "min": int(min(slip_windows)),
+            "p25": float(np.percentile(slip_windows, 25)),
+            "median": float(np.median(slip_windows)),
+            "p75": float(np.percentile(slip_windows, 75)),
+            "max": int(max(slip_windows)),
+        },
+        "n_lost_at_or_after_push_onset": int(sum(l["loss_step"] >= t for l, t in zip(lost, push_onset))),
+        "n_lost": len(lost),
+        "loss_phase_counts": {ph: int(sum(1 for l in lost if l["phase"][-1] == i)) for i, ph in enumerate(PHASES)},
+    }
+
     report: Dict = {
         "config": {
             "n_episodes": len(logs),
             "n_acquired": len(acquired),
             "nominal_outcomes": outcomes,
             "nominal_loss_rate_acquired": float(np.mean([l["outcome"] == "lost" for l in acquired])),
+            "collection": collection_stats,
+            "processor": platform.processor(),
             "ages_steps": list(ages),
             "delays_steps": list(delays),
             "control_dt": C.CONTROL_DT,
@@ -177,7 +203,8 @@ def main() -> None:
     }
     cells_by_name["random_budget"] = rand_cells_all[0]
 
-    # Paired bootstrap of completion differences (pooled over cells and per cell).
+    # Paired cluster bootstrap (unit = parent episode) of completion
+    # differences, pooled over cells and per cell.
     def merged(cells: Dict) -> CellResult:
         keys = sorted(cells)
         return CellResult(
@@ -194,8 +221,13 @@ def main() -> None:
 
     comparisons = {}
     base = merged(cells_by_name["nominal"])
-    for name in ("reactive_slip+squeeze", "failure_predictor+squeeze", "value_delay_agnostic", "value_delay_aware", "oracle_menu", "random_budget"):
+    for name in ("reactive_slip+squeeze", "failure_predictor+squeeze", "value_delay_agnostic", "value_delay_aware", "oracle_menu"):
         comparisons[f"{name}_vs_nominal"] = bootstrap_paired(merged(cells_by_name[name]), base, N_BOOT)
+    # Random baseline: the per-row completion is averaged over the 10 seeds so
+    # that the CI estimates the same quantity as the reported 10-seed mean.
+    rand_merged = [merged(rc) for rc in rand_cells_all]
+    rand_prob = np.mean([(m.outcome == OUT_PLACED).astype(float) for m in rand_merged], axis=0)
+    comparisons["random_budget_vs_nominal"] = bootstrap_paired(rand_merged[0], base, N_BOOT, weights_a=rand_prob)
     comparisons["value_delay_aware_vs_value_delay_agnostic"] = bootstrap_paired(merged(cells_by_name["value_delay_aware"]), merged(cells_by_name["value_delay_agnostic"]), N_BOOT)
     comparisons["value_delay_aware_vs_failure_predictor"] = bootstrap_paired(merged(cells_by_name["value_delay_aware"]), merged(cells_by_name["failure_predictor+squeeze"]), N_BOOT)
     for name in ("failure_predictor+squeeze", "value_delay_agnostic", "value_delay_aware"):
@@ -243,15 +275,26 @@ def main() -> None:
         "remedies": list(C.REMEDIES),
         "delays": list(delays),
     }
-    # Remedy-specific deadlines: latest lead time at which the remedy completes in >= 50% of states.
+    # Remedy-specific deadlines: smallest lead (steps before nominal loss) whose
+    # bin completes in >= 50% of states. Bins with fewer than MIN_BIN states are
+    # excluded from the deadline summary; the pooled fraction over all lost
+    # states is reported alongside so a sparse long-lead bin cannot masquerade
+    # as a deadline.
+    MIN_BIN = 20
     deadlines = {}
+    pooled_fraction = {}
+    counts = fr["count"]
     for r, remedy in enumerate(C.REMEDIES):
         if r == R_CONT:
             continue
         for k, d in enumerate(delays):
-            ok = fr["fraction_placed"][:, r, k] >= 0.5
+            frac = fr["fraction_placed"][:, r, k]
+            ok = (frac >= 0.5) & (counts >= MIN_BIN)
             deadlines[f"{remedy}_delay{d}"] = int(fr["lead_steps"][ok].min()) if ok.any() else None
+            pooled_fraction[f"{remedy}_delay{d}"] = float(np.nansum(frac * counts) / counts.sum())
     report["remedy_deadline_lead_steps_50pct"] = deadlines
+    report["remedy_deadline_min_bin_states"] = MIN_BIN
+    report["remedy_pooled_recovery_fraction"] = pooled_fraction
 
     # ------------------------------------------- held-out friction band variant
     band = (0.50, 0.58)
@@ -281,6 +324,31 @@ def main() -> None:
     report["results"] = results
     with open(args.out / "report.json", "w") as f:
         json.dump(report, f, indent=1, default=lambda o: o.tolist() if isinstance(o, np.ndarray) else o)
+
+    # Per-episode, per-cell closed-loop outcomes for every supervisor on the
+    # test split, so uncertainty can be recomputed independently of this script.
+    import csv
+
+    with open(args.out / "episode_cell_outcomes.csv", "w", newline="") as f:
+        w = csv.writer(f)
+        w.writerow(["supervisor", "age_steps", "delay_steps", "episode", "nominal_outcome", "outcome", "intervened", "remedy", "fire_step", "steps_before_loss"])
+        for name, cells in cells_by_name.items():
+            for (a, d), c in sorted(cells.items()):
+                for i in range(len(c.episode)):
+                    w.writerow([
+                        name, a, d, int(c.episode[i]), C.OUTCOMES[int(c.nominal_outcome[i])], C.OUTCOMES[int(c.outcome[i])],
+                        int(c.intervened[i]), C.REMEDIES[int(c.remedy[i])], int(c.fire_step[i]),
+                        "" if np.isnan(c.steps_before_loss[i]) else int(c.steps_before_loss[i]),
+                    ])
+        for seed, rc in enumerate(rand_cells_all):
+            for (a, d), c in sorted(rc.items()):
+                for i in range(len(c.episode)):
+                    w.writerow([
+                        f"random_budget@seed{seed}", a, d, int(c.episode[i]), C.OUTCOMES[int(c.nominal_outcome[i])], C.OUTCOMES[int(c.outcome[i])],
+                        int(c.intervened[i]), C.REMEDIES[int(c.remedy[i])], int(c.fire_step[i]),
+                        "" if np.isnan(c.steps_before_loss[i]) else int(c.steps_before_loss[i]),
+                    ])
+    print("saved", args.out / "episode_cell_outcomes.csv")
     print(json.dumps({k: {"pooled_completion": v["pooled"]["completion"], "rate": v["pooled"]["intervention_rate"]} for k, v in results.items()}, indent=1))
     print("feedback nulls:", {k: v["pooled"]["completion"] for k, v in nulls.items()})
     print("saved", args.out / "report.json")

@@ -131,3 +131,38 @@ def test_random_budget_and_feedback_nulls(logs):
         assert np.array_equal(t.branch_outcome, table.branch_outcome)
         assert np.array_equal(t.age, table.age)
     assert np.allclose(feedback_null(table, "masked", mean).x_obs, mean)
+
+
+def test_bootstrap_resamples_parent_episodes_not_rows():
+    """Pooled CIs must treat the 12 timing cells of one episode as one cluster.
+    With perfectly correlated rows within an episode, a cluster bootstrap over
+    E episodes must be as wide as a bootstrap over E rows, not E x cells rows."""
+    from delayed_recovery.evaluate import CellResult, bootstrap_paired
+
+    rng = np.random.default_rng(0)
+    n_ep, n_cells = 40, 12
+    per_ep = rng.integers(0, 2, n_ep)  # episode-level success, identical in every cell
+    ep = np.repeat(np.arange(n_ep), n_cells)
+    out_a = np.where(per_ep.repeat(n_cells) == 1, OUT_PLACED, 1)
+    out_b = np.full_like(out_a, 1)
+
+    def cell(episode, out):
+        n = len(out)
+        return CellResult(-1, -1, episode, out, np.full_like(out, 1), out == OUT_PLACED, np.zeros(n, int), np.full(n, -1), np.full(n, np.nan))
+
+    res = bootstrap_paired(cell(ep, out_a), cell(ep, out_b), n_boot=2000)
+    assert res["n_clusters"] == n_ep and res["n_rows"] == n_ep * n_cells
+    width = res["ci_high"] - res["ci_low"]
+    p = per_ep.mean()
+    # Expected 95% width for a mean of n_ep Bernoulli(p): ~ 2 * 1.96 * sqrt(p(1-p)/n_ep).
+    expected = 2 * 1.96 * np.sqrt(p * (1 - p) / n_ep)
+    assert 0.7 * expected < width < 1.3 * expected
+    # Row bootstrap would be sqrt(n_cells) narrower; make sure we are not that.
+    assert width > 2 * expected / np.sqrt(n_cells) * 1.5
+
+    # Single-cell case reduces to an ordinary paired bootstrap over episodes
+    # and gives the same width as the clustered 12-cell version.
+    ep1 = np.arange(n_ep)
+    res1 = bootstrap_paired(cell(ep1, out_a[::n_cells]), cell(ep1, out_b[::n_cells]), n_boot=2000)
+    assert res1["n_clusters"] == res1["n_rows"] == n_ep
+    assert abs((res1["ci_high"] - res1["ci_low"]) - width) < 0.02

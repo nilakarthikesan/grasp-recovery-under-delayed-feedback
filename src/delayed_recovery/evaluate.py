@@ -204,16 +204,40 @@ def budget_curve(selector: Selector, table: DecisionTable, n_grid: int = 40) -> 
     return curve
 
 
-def bootstrap_paired(a: CellResult, b: CellResult, n_boot: int = 2000, seed: int = 0) -> Dict[str, float]:
-    """Paired bootstrap over episodes of completion(a) - completion(b)."""
+def bootstrap_paired(
+    a: CellResult, b: CellResult, n_boot: int = 2000, seed: int = 0, weights_a: np.ndarray | None = None
+) -> Dict[str, float]:
+    """Paired cluster bootstrap of completion(a) - completion(b).
+
+    The resampling unit is the *parent episode*: every row belonging to a
+    resampled episode (all its timing cells) is included together, so pooled
+    comparisons over the age x delay grid are not treated as independent
+    replications. For a single cell this reduces to an ordinary paired
+    bootstrap over episodes.
+
+    ``weights_a`` optionally replaces the binary completion of ``a`` by a
+    per-row completion probability (e.g. an average over random seeds).
+    """
     assert np.array_equal(a.episode, b.episode)
     rng = np.random.default_rng(seed)
-    da = (a.outcome == OUT_PLACED).astype(float)
+    da = (a.outcome == OUT_PLACED).astype(float) if weights_a is None else np.asarray(weights_a, dtype=float)
     db = (b.outcome == OUT_PLACED).astype(float)
     diff = da - db
-    n = len(diff)
-    boots = np.array([diff[rng.integers(0, n, n)].mean() for _ in range(n_boot)])
-    return {"mean": float(diff.mean()), "ci_low": float(np.quantile(boots, 0.025)), "ci_high": float(np.quantile(boots, 0.975))}
+    eps, inv = np.unique(a.episode, return_inverse=True)
+    n_ep = len(eps)
+    # Per-episode sum of differences and row count; a resample of episodes is
+    # then a weighted mean of these cluster totals.
+    tot = np.bincount(inv, weights=diff, minlength=n_ep)
+    cnt = np.bincount(inv, minlength=n_ep).astype(float)
+    idx = rng.integers(0, n_ep, size=(n_boot, n_ep))
+    boots = tot[idx].sum(axis=1) / cnt[idx].sum(axis=1)
+    return {
+        "mean": float(diff.mean()),
+        "ci_low": float(np.quantile(boots, 0.025)),
+        "ci_high": float(np.quantile(boots, 0.975)),
+        "n_clusters": int(n_ep),
+        "n_rows": int(len(diff)),
+    }
 
 
 def recovery_frontier(table: DecisionTable, age: int = 0) -> Dict[str, np.ndarray]:

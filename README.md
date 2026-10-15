@@ -17,22 +17,25 @@ does not.
   [docs/GRASP_RECOVERY_UNDER_DELAYED_FEEDBACK.md](docs/GRASP_RECOVERY_UNDER_DELAYED_FEEDBACK.md)
 * Paper draft (IEEE two-column, four pages): [paper/main.tex](paper/main.tex)
 * Pilot results: [results/pilot_v1/report.json](results/pilot_v1/report.json)
-  (summary in §11 of the design document)
+  (summary in §11 of the design document); per-episode, per-cell outcomes for
+  every supervisor in
+  [results/pilot_v1/episode_cell_outcomes.csv](results/pilot_v1/episode_cell_outcomes.csv)
 
 ## Headline findings (pilot, 94 held-out episodes × 12 timing cells)
 
 * Remedies have their own deadlines: 50 % recovery needs 50 ms of decision
   lead for *squeeze* and 350 ms for *place/regrasp* at zero delay; both shift
-  by roughly the response delay. *Slow* never recovers more than a third of
-  states.
-* Every nominal loss was recoverable by some remedy even at 500 ms delay
-  (privileged oracle 1.00 at 32 % interventions); the deployable gap is
-  detection under stale evidence, not physics.
+  by roughly the response delay. *Slow* recovers at most 22 % of lost states
+  pooled over leads.
+* Every nominal loss in the test set was recoverable by some remedy even at
+  500 ms delay (privileged oracle 1.00 at 32 % interventions); within this
+  task the deployable gap is detection under stale evidence, not physics.
 * Reactive slip detection + squeeze falls from 1.00 to 0.72 across the
   age × delay grid; anticipatory supervisors fall from 0.99 to 0.87.
 * The latency-conditioned value model changes what and how often it fires but
   does not complete more tasks than a future-loss predictor driving a fixed
-  squeeze (−1.6 points, 95 % CI [−2.4, −0.9]). Reported as a negative result.
+  squeeze (−1.6 points, 95 % episode-clustered CI [−3.5, −0.2]). Reported as
+  a negative result.
 
 ## What is here
 
