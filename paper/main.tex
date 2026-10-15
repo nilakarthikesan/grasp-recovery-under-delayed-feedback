@@ -16,9 +16,8 @@
 \title{When Is It Too Late to Squeeze?\\
 Remedy-Specific Recovery Deadlines under Observation Age and Response Delay}
 
-\author{\IEEEauthorblockN{Nila Karthikesan}
-\IEEEauthorblockA{Independent research\\
-\url{https://github.com/nilakarthikesan/grasp-recovery-under-delayed-feedback}}}
+% Double-blind: author and affiliation intentionally omitted from the manuscript.
+\author{\IEEEauthorblockN{Anonymous submission}}
 
 \maketitle
 
@@ -123,7 +122,7 @@ Re-splitting so that friction $\in[0.50,0.58]$ (64 acquired episodes) is never s
 \label{sec:limits}
 Inference costs 3--12~ms per decision (Apple M4, scikit-learn), inside one control step. (i) Within this task and menu, recoverability is not the bottleneck: the oracle completes every test episode at 500~ms delay. The bottleneck is the \emph{evidence race}---whether non-privileged observations identify the episode before the remedy's deadline minus the delay. (ii) Because \remedy{squeeze} is the fastest remedy and, within its deadline, almost always sufficient, the value of the richer menu collapses to ``squeeze early enough'', which a future-loss predictor already does. The delay-aware model learns the right qualitative behaviour without a completion benefit; with 94 clustered test episodes its difference intervals span about $\pm1.5$ points, so a small benefit is not excluded, but one comparable to the reactive-vs-anticipatory gap is. (iii) Reactive detection, which many systems deploy, is the one design that latency breaks.
 
-The claims are bounded by: simulation only, soft contacts standing in for real friction; one rigid cube; an ideal Cartesian carrier; scripted controller and remedies; deterministic physics with a single push, so paired outcomes are binary, not calibrated probabilities; synthetic fixed delays, not measured latency traces; proprioception and wrist force only; 94 test episodes; a validation-set budget rather than matched realised budgets; and a menu in which squeezing is cheap---objects with a crush limit, or a gripper already at its force bound, would change the frontier and could restore the value of a menu-aware selector. Those are the next experiments, then matched (not counterfactual-exact) blocks on a physical arm. Code, the report with every number above, per-episode outcomes, lookup-verification records and this manuscript are in the repository in the title block.
+The claims are bounded by: simulation only, soft contacts standing in for real friction; one rigid cube; an ideal Cartesian carrier; scripted controller and remedies; deterministic physics with a single push, so paired outcomes are binary, not calibrated probabilities; synthetic fixed delays, not measured latency traces; proprioception and wrist force only; 94 test episodes; a validation-set budget rather than matched realised budgets; and a menu in which squeezing is cheap---objects with a crush limit, or a gripper already at its force bound, would change the frontier and could restore the value of a menu-aware selector. Those are the next experiments, then matched (not counterfactual-exact) blocks on a physical arm. Code, the report with every number above, per-episode outcomes and lookup-verification records are provided as anonymised supplementary material.
 
 \begin{thebibliography}{99}
 \bibitem{rescue} D.~Ahmedt-Aristizabal, A.~Khamis, M.~A.~Armin, L.~Petersson, ``RESCUE: Is this alarm worth acting on? Counterfactual evaluation of VLA runtime monitors,'' arXiv:2610.13516, 2026.
