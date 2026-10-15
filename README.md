@@ -72,8 +72,10 @@ python scripts/make_figures.py --report results/pilot_v1/report.json --out paper
 cd paper && tectonic main.tex
 ```
 
-`runs/` (raw branch tables, ~3 MB) is ignored; `results/` and `paper/figures`
-are committed so the paper builds from the repository alone.
+`runs/pilot_v1/branches/` (the 400 raw per-episode branch files, ~3 MB) is
+committed so every number can be recomputed without re-simulating; other
+`runs/` output is ignored. `results/` and `paper/figures` are committed so the
+paper builds from the repository alone.
 
 ## Timing contract in one line
 

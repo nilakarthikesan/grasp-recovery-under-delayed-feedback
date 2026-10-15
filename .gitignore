@@ -11,5 +11,8 @@ node_modules/
 *.pem
 *.key
 data/
-runs/
+runs/*
+!runs/pilot_v1/
+runs/pilot_v1/*
+!runs/pilot_v1/branches/
 outputs/

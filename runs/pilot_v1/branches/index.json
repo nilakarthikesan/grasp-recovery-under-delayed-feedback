@@ -1,0 +1,8027 @@
+{
+ "delays": [
+  0,
+  2,
+  5,
+  10
+ ],
+ "remedies": [
+  "continue",
+  "slow",
+  "squeeze",
+  "place_regrasp"
+ ],
+ "outcomes": [
+  "placed",
+  "lost",
+  "misplaced",
+  "preserved_abort",
+  "acquisition_failed",
+  "timeout"
+ ],
+ "control_dt": 0.05,
+ "n_episodes": 400,
+ "elapsed_s": 336.63678908348083,
+ "episodes": [
+  {
+   "index": 0,
+   "condition": {
+    "mass": 0.3729,
+    "friction": 0.4714,
+    "transport_speed": 0.8,
+    "transport_accel": 5.0,
+    "grasp_x_offset": -0.00774,
+    "disturb_offset": 2,
+    "disturb_accel": 7.302,
+    "seed": 0
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 27,
+   "file": "episode_00000.npz"
+  },
+  {
+   "index": 1,
+   "condition": {
+    "mass": 0.3623,
+    "friction": 0.6783,
+    "transport_speed": 1.2,
+    "transport_accel": 8.0,
+    "grasp_x_offset": 0.00696,
+    "disturb_offset": 6,
+    "disturb_accel": 6.527,
+    "seed": 1
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 47,
+   "loss_step": 47,
+   "first_slip_step": 45,
+   "file": "episode_00001.npz"
+  },
+  {
+   "index": 2,
+   "condition": {
+    "mass": 0.151,
+    "friction": 0.7358,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00367,
+    "disturb_offset": 9,
+    "disturb_accel": 6.905,
+    "seed": 2
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00002.npz"
+  },
+  {
+   "index": 3,
+   "condition": {
+    "mass": 0.3395,
+    "friction": 0.4849,
+    "transport_speed": 0.8,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.00755,
+    "disturb_offset": 5,
+    "disturb_accel": 0.994,
+    "seed": 3
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 50,
+   "loss_step": 51,
+   "first_slip_step": 39,
+   "file": "episode_00003.npz"
+  },
+  {
+   "index": 4,
+   "condition": {
+    "mass": 0.3847,
+    "friction": 0.6412,
+    "transport_speed": 0.8,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.00186,
+    "disturb_offset": 5,
+    "disturb_accel": 7.847,
+    "seed": 4
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 45,
+   "first_slip_step": 43,
+   "file": "episode_00004.npz"
+  },
+  {
+   "index": 5,
+   "condition": {
+    "mass": 0.3899,
+    "friction": 0.6427,
+    "transport_speed": 1.2,
+    "transport_accel": 12.0,
+    "grasp_x_offset": -0.00178,
+    "disturb_offset": 7,
+    "disturb_accel": 1.081,
+    "seed": 5
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 46,
+   "loss_step": 47,
+   "first_slip_step": 39,
+   "file": "episode_00005.npz"
+  },
+  {
+   "index": 6,
+   "condition": {
+    "mass": 0.4025,
+    "friction": 0.5864,
+    "transport_speed": 0.8,
+    "transport_accel": 5.0,
+    "grasp_x_offset": -0.00023,
+    "disturb_offset": 8,
+    "disturb_accel": 7.472,
+    "seed": 6
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 47,
+   "first_slip_step": 46,
+   "file": "episode_00006.npz"
+  },
+  {
+   "index": 7,
+   "condition": {
+    "mass": 0.2752,
+    "friction": 0.6072,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00151,
+    "disturb_offset": 4,
+    "disturb_accel": 2.703,
+    "seed": 7
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00007.npz"
+  },
+  {
+   "index": 8,
+   "condition": {
+    "mass": 0.2871,
+    "friction": 0.7506,
+    "transport_speed": 0.8,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00197,
+    "disturb_offset": 1,
+    "disturb_accel": 6.661,
+    "seed": 8
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 51,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00008.npz"
+  },
+  {
+   "index": 9,
+   "condition": {
+    "mass": 0.4255,
+    "friction": 0.4577,
+    "transport_speed": 0.8,
+    "transport_accel": 12.0,
+    "grasp_x_offset": -0.00706,
+    "disturb_offset": 9,
+    "disturb_accel": 2.689,
+    "seed": 9
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 27,
+   "file": "episode_00009.npz"
+  },
+  {
+   "index": 10,
+   "condition": {
+    "mass": 0.2026,
+    "friction": 0.5527,
+    "transport_speed": 1.2,
+    "transport_accel": 12.0,
+    "grasp_x_offset": -0.00431,
+    "disturb_offset": 8,
+    "disturb_accel": 3.236,
+    "seed": 10
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 46,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00010.npz"
+  },
+  {
+   "index": 11,
+   "condition": {
+    "mass": 0.2195,
+    "friction": 0.3908,
+    "transport_speed": 0.8,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.00322,
+    "disturb_offset": 6,
+    "disturb_accel": 5.376,
+    "seed": 11
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 50,
+   "loss_step": -1,
+   "first_slip_step": 46,
+   "file": "episode_00011.npz"
+  },
+  {
+   "index": 12,
+   "condition": {
+    "mass": 0.2198,
+    "friction": 0.774,
+    "transport_speed": 0.8,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.00631,
+    "disturb_offset": 6,
+    "disturb_accel": 7.417,
+    "seed": 12
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 50,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00012.npz"
+  },
+  {
+   "index": 13,
+   "condition": {
+    "mass": 0.3041,
+    "friction": 0.7796,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": -0.0012,
+    "disturb_offset": 5,
+    "disturb_accel": 4.962,
+    "seed": 13
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00013.npz"
+  },
+  {
+   "index": 14,
+   "condition": {
+    "mass": 0.4983,
+    "friction": 0.777,
+    "transport_speed": 0.8,
+    "transport_accel": 8.0,
+    "grasp_x_offset": 0.00412,
+    "disturb_offset": 5,
+    "disturb_accel": 4.234,
+    "seed": 14
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 46,
+   "first_slip_step": 43,
+   "file": "episode_00014.npz"
+  },
+  {
+   "index": 15,
+   "condition": {
+    "mass": 0.425,
+    "friction": 0.5366,
+    "transport_speed": 0.8,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00338,
+    "disturb_offset": 8,
+    "disturb_accel": 7.456,
+    "seed": 15
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 27,
+   "file": "episode_00015.npz"
+  },
+  {
+   "index": 16,
+   "condition": {
+    "mass": 0.1902,
+    "friction": 0.6781,
+    "transport_speed": 1.2,
+    "transport_accel": 12.0,
+    "grasp_x_offset": 0.00749,
+    "disturb_offset": 9,
+    "disturb_accel": 6.909,
+    "seed": 16
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 46,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00016.npz"
+  },
+  {
+   "index": 17,
+   "condition": {
+    "mass": 0.4934,
+    "friction": 0.7807,
+    "transport_speed": 0.8,
+    "transport_accel": 8.0,
+    "grasp_x_offset": 0.00756,
+    "disturb_offset": 2,
+    "disturb_accel": 7.119,
+    "seed": 17
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 41,
+   "first_slip_step": 40,
+   "file": "episode_00017.npz"
+  },
+  {
+   "index": 18,
+   "condition": {
+    "mass": 0.4378,
+    "friction": 0.566,
+    "transport_speed": 0.8,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00483,
+    "disturb_offset": 2,
+    "disturb_accel": 2.129,
+    "seed": 18
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 30,
+   "first_slip_step": 27,
+   "file": "episode_00018.npz"
+  },
+  {
+   "index": 19,
+   "condition": {
+    "mass": 0.3386,
+    "friction": 0.5492,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": -0.00735,
+    "disturb_offset": 10,
+    "disturb_accel": 5.856,
+    "seed": 19
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": 50,
+   "first_slip_step": -1,
+   "file": "episode_00019.npz"
+  },
+  {
+   "index": 20,
+   "condition": {
+    "mass": 0.365,
+    "friction": 0.3628,
+    "transport_speed": 1.2,
+    "transport_accel": 12.0,
+    "grasp_x_offset": -0.00774,
+    "disturb_offset": 1,
+    "disturb_accel": 4.102,
+    "seed": 20
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 26,
+   "file": "episode_00020.npz"
+  },
+  {
+   "index": 21,
+   "condition": {
+    "mass": 0.4752,
+    "friction": 0.3797,
+    "transport_speed": 1.2,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.00693,
+    "disturb_offset": 9,
+    "disturb_accel": 2.754,
+    "seed": 21
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 26,
+   "file": "episode_00021.npz"
+  },
+  {
+   "index": 22,
+   "condition": {
+    "mass": 0.3006,
+    "friction": 0.7847,
+    "transport_speed": 0.8,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.00386,
+    "disturb_offset": 3,
+    "disturb_accel": 7.105,
+    "seed": 22
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 50,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00022.npz"
+  },
+  {
+   "index": 23,
+   "condition": {
+    "mass": 0.2291,
+    "friction": 0.406,
+    "transport_speed": 0.8,
+    "transport_accel": 12.0,
+    "grasp_x_offset": 0.00138,
+    "disturb_offset": 3,
+    "disturb_accel": 4.433,
+    "seed": 23
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00023.npz"
+  },
+  {
+   "index": 24,
+   "condition": {
+    "mass": 0.4334,
+    "friction": 0.6022,
+    "transport_speed": 0.8,
+    "transport_accel": 5.0,
+    "grasp_x_offset": -0.00139,
+    "disturb_offset": 5,
+    "disturb_accel": 5.012,
+    "seed": 24
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 45,
+   "first_slip_step": 40,
+   "file": "episode_00024.npz"
+  },
+  {
+   "index": 25,
+   "condition": {
+    "mass": 0.4857,
+    "friction": 0.5162,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.0015,
+    "disturb_offset": 6,
+    "disturb_accel": 6.786,
+    "seed": 25
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 27,
+   "file": "episode_00025.npz"
+  },
+  {
+   "index": 26,
+   "condition": {
+    "mass": 0.2009,
+    "friction": 0.5329,
+    "transport_speed": 0.8,
+    "transport_accel": 12.0,
+    "grasp_x_offset": -0.00731,
+    "disturb_offset": 6,
+    "disturb_accel": 3.323,
+    "seed": 26
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00026.npz"
+  },
+  {
+   "index": 27,
+   "condition": {
+    "mass": 0.4404,
+    "friction": 0.3545,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": -0.00674,
+    "disturb_offset": 4,
+    "disturb_accel": 5.221,
+    "seed": 27
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 26,
+   "file": "episode_00027.npz"
+  },
+  {
+   "index": 28,
+   "condition": {
+    "mass": 0.2458,
+    "friction": 0.6662,
+    "transport_speed": 1.2,
+    "transport_accel": 12.0,
+    "grasp_x_offset": -0.00597,
+    "disturb_offset": 1,
+    "disturb_accel": 0.476,
+    "seed": 28
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 46,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00028.npz"
+  },
+  {
+   "index": 29,
+   "condition": {
+    "mass": 0.2833,
+    "friction": 0.5434,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00762,
+    "disturb_offset": 5,
+    "disturb_accel": 6.206,
+    "seed": 29
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": 45,
+   "file": "episode_00029.npz"
+  },
+  {
+   "index": 30,
+   "condition": {
+    "mass": 0.2581,
+    "friction": 0.4714,
+    "transport_speed": 1.2,
+    "transport_accel": 12.0,
+    "grasp_x_offset": 0.0061,
+    "disturb_offset": 2,
+    "disturb_accel": 2.754,
+    "seed": 30
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 46,
+   "loss_step": -1,
+   "first_slip_step": 40,
+   "file": "episode_00030.npz"
+  },
+  {
+   "index": 31,
+   "condition": {
+    "mass": 0.4982,
+    "friction": 0.4922,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00608,
+    "disturb_offset": 2,
+    "disturb_accel": 6.499,
+    "seed": 31
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 27,
+   "file": "episode_00031.npz"
+  },
+  {
+   "index": 32,
+   "condition": {
+    "mass": 0.3838,
+    "friction": 0.7813,
+    "transport_speed": 1.2,
+    "transport_accel": 12.0,
+    "grasp_x_offset": 0.00397,
+    "disturb_offset": 7,
+    "disturb_accel": 1.977,
+    "seed": 32
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 46,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00032.npz"
+  },
+  {
+   "index": 33,
+   "condition": {
+    "mass": 0.1994,
+    "friction": 0.6515,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": -0.00533,
+    "disturb_offset": 8,
+    "disturb_accel": 3.164,
+    "seed": 33
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00033.npz"
+  },
+  {
+   "index": 34,
+   "condition": {
+    "mass": 0.4686,
+    "friction": 0.6026,
+    "transport_speed": 1.2,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.00489,
+    "disturb_offset": 8,
+    "disturb_accel": 4.187,
+    "seed": 34
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 30,
+   "first_slip_step": 27,
+   "file": "episode_00034.npz"
+  },
+  {
+   "index": 35,
+   "condition": {
+    "mass": 0.1811,
+    "friction": 0.7919,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": -0.0079,
+    "disturb_offset": 6,
+    "disturb_accel": 6.181,
+    "seed": 35
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00035.npz"
+  },
+  {
+   "index": 36,
+   "condition": {
+    "mass": 0.4924,
+    "friction": 0.6154,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": -0.005,
+    "disturb_offset": 4,
+    "disturb_accel": 1.561,
+    "seed": 36
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 27,
+   "file": "episode_00036.npz"
+  },
+  {
+   "index": 37,
+   "condition": {
+    "mass": 0.3522,
+    "friction": 0.621,
+    "transport_speed": 1.2,
+    "transport_accel": 12.0,
+    "grasp_x_offset": -0.00684,
+    "disturb_offset": 10,
+    "disturb_accel": 4.0,
+    "seed": 37
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 46,
+   "loss_step": 49,
+   "first_slip_step": 40,
+   "file": "episode_00037.npz"
+  },
+  {
+   "index": 38,
+   "condition": {
+    "mass": 0.4104,
+    "friction": 0.4298,
+    "transport_speed": 1.2,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.00699,
+    "disturb_offset": 8,
+    "disturb_accel": 0.702,
+    "seed": 38
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 27,
+   "file": "episode_00038.npz"
+  },
+  {
+   "index": 39,
+   "condition": {
+    "mass": 0.2883,
+    "friction": 0.7431,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.0066,
+    "disturb_offset": 5,
+    "disturb_accel": 6.127,
+    "seed": 39
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00039.npz"
+  },
+  {
+   "index": 40,
+   "condition": {
+    "mass": 0.4704,
+    "friction": 0.4073,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": -0.00687,
+    "disturb_offset": 3,
+    "disturb_accel": 5.073,
+    "seed": 40
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 26,
+   "file": "episode_00040.npz"
+  },
+  {
+   "index": 41,
+   "condition": {
+    "mass": 0.3238,
+    "friction": 0.4236,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": -0.00291,
+    "disturb_offset": 7,
+    "disturb_accel": 5.687,
+    "seed": 41
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 40,
+   "first_slip_step": 27,
+   "file": "episode_00041.npz"
+  },
+  {
+   "index": 42,
+   "condition": {
+    "mass": 0.3111,
+    "friction": 0.5784,
+    "transport_speed": 1.2,
+    "transport_accel": 12.0,
+    "grasp_x_offset": -0.00652,
+    "disturb_offset": 1,
+    "disturb_accel": 1.578,
+    "seed": 42
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 46,
+   "loss_step": -1,
+   "first_slip_step": 40,
+   "file": "episode_00042.npz"
+  },
+  {
+   "index": 43,
+   "condition": {
+    "mass": 0.4328,
+    "friction": 0.57,
+    "transport_speed": 1.2,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.00507,
+    "disturb_offset": 10,
+    "disturb_accel": 7.704,
+    "seed": 43
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 40,
+   "first_slip_step": 27,
+   "file": "episode_00043.npz"
+  },
+  {
+   "index": 44,
+   "condition": {
+    "mass": 0.4303,
+    "friction": 0.5666,
+    "transport_speed": 1.2,
+    "transport_accel": 12.0,
+    "grasp_x_offset": 0.00165,
+    "disturb_offset": 8,
+    "disturb_accel": 7.31,
+    "seed": 44
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 39,
+   "first_slip_step": 27,
+   "file": "episode_00044.npz"
+  },
+  {
+   "index": 45,
+   "condition": {
+    "mass": 0.1728,
+    "friction": 0.7257,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": -0.00279,
+    "disturb_offset": 4,
+    "disturb_accel": 7.952,
+    "seed": 45
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00045.npz"
+  },
+  {
+   "index": 46,
+   "condition": {
+    "mass": 0.4234,
+    "friction": 0.5685,
+    "transport_speed": 0.8,
+    "transport_accel": 8.0,
+    "grasp_x_offset": 0.00604,
+    "disturb_offset": 10,
+    "disturb_accel": 5.667,
+    "seed": 46
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 40,
+   "first_slip_step": 27,
+   "file": "episode_00046.npz"
+  },
+  {
+   "index": 47,
+   "condition": {
+    "mass": 0.4262,
+    "friction": 0.7096,
+    "transport_speed": 0.8,
+    "transport_accel": 12.0,
+    "grasp_x_offset": 0.00475,
+    "disturb_offset": 4,
+    "disturb_accel": 1.803,
+    "seed": 47
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00047.npz"
+  },
+  {
+   "index": 48,
+   "condition": {
+    "mass": 0.2768,
+    "friction": 0.5379,
+    "transport_speed": 0.8,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.0062,
+    "disturb_offset": 10,
+    "disturb_accel": 0.002,
+    "seed": 48
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 50,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00048.npz"
+  },
+  {
+   "index": 49,
+   "condition": {
+    "mass": 0.4105,
+    "friction": 0.7333,
+    "transport_speed": 0.8,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00326,
+    "disturb_offset": 2,
+    "disturb_accel": 6.569,
+    "seed": 49
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 43,
+   "first_slip_step": 41,
+   "file": "episode_00049.npz"
+  },
+  {
+   "index": 50,
+   "condition": {
+    "mass": 0.4936,
+    "friction": 0.7297,
+    "transport_speed": 0.8,
+    "transport_accel": 8.0,
+    "grasp_x_offset": 0.00768,
+    "disturb_offset": 7,
+    "disturb_accel": 4.029,
+    "seed": 50
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 47,
+   "first_slip_step": 39,
+   "file": "episode_00050.npz"
+  },
+  {
+   "index": 51,
+   "condition": {
+    "mass": 0.4137,
+    "friction": 0.7612,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00582,
+    "disturb_offset": 5,
+    "disturb_accel": 5.613,
+    "seed": 51
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": 45,
+   "file": "episode_00051.npz"
+  },
+  {
+   "index": 52,
+   "condition": {
+    "mass": 0.2529,
+    "friction": 0.6954,
+    "transport_speed": 1.2,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.0065,
+    "disturb_offset": 3,
+    "disturb_accel": 0.59,
+    "seed": 52
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 47,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00052.npz"
+  },
+  {
+   "index": 53,
+   "condition": {
+    "mass": 0.3167,
+    "friction": 0.5428,
+    "transport_speed": 0.8,
+    "transport_accel": 8.0,
+    "grasp_x_offset": 0.00138,
+    "disturb_offset": 5,
+    "disturb_accel": 0.982,
+    "seed": 53
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 50,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00053.npz"
+  },
+  {
+   "index": 54,
+   "condition": {
+    "mass": 0.4768,
+    "friction": 0.6578,
+    "transport_speed": 0.8,
+    "transport_accel": 12.0,
+    "grasp_x_offset": 0.00635,
+    "disturb_offset": 7,
+    "disturb_accel": 0.322,
+    "seed": 54
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 41,
+   "first_slip_step": 28,
+   "file": "episode_00054.npz"
+  },
+  {
+   "index": 55,
+   "condition": {
+    "mass": 0.399,
+    "friction": 0.6061,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00051,
+    "disturb_offset": 9,
+    "disturb_accel": 6.506,
+    "seed": 55
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 48,
+   "first_slip_step": 47,
+   "file": "episode_00055.npz"
+  },
+  {
+   "index": 56,
+   "condition": {
+    "mass": 0.499,
+    "friction": 0.5077,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": -0.00173,
+    "disturb_offset": 8,
+    "disturb_accel": 3.514,
+    "seed": 56
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 27,
+   "file": "episode_00056.npz"
+  },
+  {
+   "index": 57,
+   "condition": {
+    "mass": 0.3559,
+    "friction": 0.4073,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": -0.00352,
+    "disturb_offset": 8,
+    "disturb_accel": 1.525,
+    "seed": 57
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 27,
+   "file": "episode_00057.npz"
+  },
+  {
+   "index": 58,
+   "condition": {
+    "mass": 0.452,
+    "friction": 0.604,
+    "transport_speed": 0.8,
+    "transport_accel": 8.0,
+    "grasp_x_offset": 0.00638,
+    "disturb_offset": 10,
+    "disturb_accel": 5.569,
+    "seed": 58
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 40,
+   "first_slip_step": 27,
+   "file": "episode_00058.npz"
+  },
+  {
+   "index": 59,
+   "condition": {
+    "mass": 0.2648,
+    "friction": 0.4289,
+    "transport_speed": 0.8,
+    "transport_accel": 12.0,
+    "grasp_x_offset": -0.00219,
+    "disturb_offset": 7,
+    "disturb_accel": 2.639,
+    "seed": 59
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00059.npz"
+  },
+  {
+   "index": 60,
+   "condition": {
+    "mass": 0.4803,
+    "friction": 0.4397,
+    "transport_speed": 0.8,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.00762,
+    "disturb_offset": 7,
+    "disturb_accel": 7.067,
+    "seed": 60
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 27,
+   "file": "episode_00060.npz"
+  },
+  {
+   "index": 61,
+   "condition": {
+    "mass": 0.4262,
+    "friction": 0.6006,
+    "transport_speed": 0.8,
+    "transport_accel": 12.0,
+    "grasp_x_offset": 0.00092,
+    "disturb_offset": 3,
+    "disturb_accel": 0.097,
+    "seed": 61
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": 51,
+   "first_slip_step": 39,
+   "file": "episode_00061.npz"
+  },
+  {
+   "index": 62,
+   "condition": {
+    "mass": 0.3995,
+    "friction": 0.6725,
+    "transport_speed": 1.2,
+    "transport_accel": 8.0,
+    "grasp_x_offset": 0.00178,
+    "disturb_offset": 4,
+    "disturb_accel": 1.971,
+    "seed": 62
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 47,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00062.npz"
+  },
+  {
+   "index": 63,
+   "condition": {
+    "mass": 0.351,
+    "friction": 0.5274,
+    "transport_speed": 0.8,
+    "transport_accel": 8.0,
+    "grasp_x_offset": 0.00678,
+    "disturb_offset": 10,
+    "disturb_accel": 1.216,
+    "seed": 63
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 50,
+   "loss_step": -1,
+   "first_slip_step": 40,
+   "file": "episode_00063.npz"
+  },
+  {
+   "index": 64,
+   "condition": {
+    "mass": 0.3565,
+    "friction": 0.6633,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": -0.003,
+    "disturb_offset": 2,
+    "disturb_accel": 7.209,
+    "seed": 64
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": 41,
+   "file": "episode_00064.npz"
+  },
+  {
+   "index": 65,
+   "condition": {
+    "mass": 0.2696,
+    "friction": 0.4575,
+    "transport_speed": 1.2,
+    "transport_accel": 12.0,
+    "grasp_x_offset": 0.00136,
+    "disturb_offset": 9,
+    "disturb_accel": 3.813,
+    "seed": 65
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 46,
+   "loss_step": 48,
+   "first_slip_step": 39,
+   "file": "episode_00065.npz"
+  },
+  {
+   "index": 66,
+   "condition": {
+    "mass": 0.2397,
+    "friction": 0.3827,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00128,
+    "disturb_offset": 5,
+    "disturb_accel": 7.804,
+    "seed": 66
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 45,
+   "first_slip_step": 43,
+   "file": "episode_00066.npz"
+  },
+  {
+   "index": 67,
+   "condition": {
+    "mass": 0.1876,
+    "friction": 0.5534,
+    "transport_speed": 0.8,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.00428,
+    "disturb_offset": 4,
+    "disturb_accel": 5.99,
+    "seed": 67
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 50,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00067.npz"
+  },
+  {
+   "index": 68,
+   "condition": {
+    "mass": 0.3753,
+    "friction": 0.6766,
+    "transport_speed": 0.8,
+    "transport_accel": 5.0,
+    "grasp_x_offset": -0.00236,
+    "disturb_offset": 7,
+    "disturb_accel": 3.414,
+    "seed": 68
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 51,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00068.npz"
+  },
+  {
+   "index": 69,
+   "condition": {
+    "mass": 0.1642,
+    "friction": 0.4373,
+    "transport_speed": 1.2,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.0054,
+    "disturb_offset": 10,
+    "disturb_accel": 6.816,
+    "seed": 69
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 47,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00069.npz"
+  },
+  {
+   "index": 70,
+   "condition": {
+    "mass": 0.4377,
+    "friction": 0.5261,
+    "transport_speed": 0.8,
+    "transport_accel": 8.0,
+    "grasp_x_offset": 0.00518,
+    "disturb_offset": 2,
+    "disturb_accel": 6.696,
+    "seed": 70
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 27,
+   "file": "episode_00070.npz"
+  },
+  {
+   "index": 71,
+   "condition": {
+    "mass": 0.4152,
+    "friction": 0.6611,
+    "transport_speed": 1.2,
+    "transport_accel": 8.0,
+    "grasp_x_offset": 0.00516,
+    "disturb_offset": 10,
+    "disturb_accel": 1.433,
+    "seed": 71
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 47,
+   "loss_step": -1,
+   "first_slip_step": 40,
+   "file": "episode_00071.npz"
+  },
+  {
+   "index": 72,
+   "condition": {
+    "mass": 0.4119,
+    "friction": 0.389,
+    "transport_speed": 1.2,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.00165,
+    "disturb_offset": 10,
+    "disturb_accel": 7.503,
+    "seed": 72
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 26,
+   "file": "episode_00072.npz"
+  },
+  {
+   "index": 73,
+   "condition": {
+    "mass": 0.1832,
+    "friction": 0.3522,
+    "transport_speed": 0.8,
+    "transport_accel": 12.0,
+    "grasp_x_offset": 0.00785,
+    "disturb_offset": 4,
+    "disturb_accel": 2.118,
+    "seed": 73
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00073.npz"
+  },
+  {
+   "index": 74,
+   "condition": {
+    "mass": 0.4407,
+    "friction": 0.4279,
+    "transport_speed": 1.2,
+    "transport_accel": 8.0,
+    "grasp_x_offset": 0.00733,
+    "disturb_offset": 7,
+    "disturb_accel": 7.844,
+    "seed": 74
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 27,
+   "file": "episode_00074.npz"
+  },
+  {
+   "index": 75,
+   "condition": {
+    "mass": 0.3511,
+    "friction": 0.7925,
+    "transport_speed": 1.2,
+    "transport_accel": 8.0,
+    "grasp_x_offset": 0.00445,
+    "disturb_offset": 9,
+    "disturb_accel": 7.108,
+    "seed": 75
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 47,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00075.npz"
+  },
+  {
+   "index": 76,
+   "condition": {
+    "mass": 0.371,
+    "friction": 0.5104,
+    "transport_speed": 0.8,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.00438,
+    "disturb_offset": 3,
+    "disturb_accel": 1.361,
+    "seed": 76
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 42,
+   "first_slip_step": 28,
+   "file": "episode_00076.npz"
+  },
+  {
+   "index": 77,
+   "condition": {
+    "mass": 0.352,
+    "friction": 0.5912,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00417,
+    "disturb_offset": 7,
+    "disturb_accel": 0.879,
+    "seed": 77
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00077.npz"
+  },
+  {
+   "index": 78,
+   "condition": {
+    "mass": 0.3687,
+    "friction": 0.5363,
+    "transport_speed": 0.8,
+    "transport_accel": 8.0,
+    "grasp_x_offset": 0.0031,
+    "disturb_offset": 4,
+    "disturb_accel": 5.863,
+    "seed": 78
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 43,
+   "first_slip_step": 40,
+   "file": "episode_00078.npz"
+  },
+  {
+   "index": 79,
+   "condition": {
+    "mass": 0.332,
+    "friction": 0.5583,
+    "transport_speed": 1.2,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.00433,
+    "disturb_offset": 3,
+    "disturb_accel": 5.562,
+    "seed": 79
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 44,
+   "first_slip_step": 42,
+   "file": "episode_00079.npz"
+  },
+  {
+   "index": 80,
+   "condition": {
+    "mass": 0.3935,
+    "friction": 0.438,
+    "transport_speed": 0.8,
+    "transport_accel": 12.0,
+    "grasp_x_offset": 0.00274,
+    "disturb_offset": 3,
+    "disturb_accel": 6.729,
+    "seed": 80
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 27,
+   "file": "episode_00080.npz"
+  },
+  {
+   "index": 81,
+   "condition": {
+    "mass": 0.3203,
+    "friction": 0.5642,
+    "transport_speed": 1.2,
+    "transport_accel": 12.0,
+    "grasp_x_offset": -0.0055,
+    "disturb_offset": 3,
+    "disturb_accel": 5.693,
+    "seed": 81
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 43,
+   "first_slip_step": 40,
+   "file": "episode_00081.npz"
+  },
+  {
+   "index": 82,
+   "condition": {
+    "mass": 0.4454,
+    "friction": 0.655,
+    "transport_speed": 0.8,
+    "transport_accel": 8.0,
+    "grasp_x_offset": 0.00121,
+    "disturb_offset": 6,
+    "disturb_accel": 7.493,
+    "seed": 82
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 45,
+   "first_slip_step": 40,
+   "file": "episode_00082.npz"
+  },
+  {
+   "index": 83,
+   "condition": {
+    "mass": 0.2857,
+    "friction": 0.4242,
+    "transport_speed": 1.2,
+    "transport_accel": 8.0,
+    "grasp_x_offset": 0.00632,
+    "disturb_offset": 9,
+    "disturb_accel": 0.386,
+    "seed": 83
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 47,
+   "loss_step": 47,
+   "first_slip_step": 40,
+   "file": "episode_00083.npz"
+  },
+  {
+   "index": 84,
+   "condition": {
+    "mass": 0.2194,
+    "friction": 0.6363,
+    "transport_speed": 0.8,
+    "transport_accel": 12.0,
+    "grasp_x_offset": 0.00171,
+    "disturb_offset": 7,
+    "disturb_accel": 0.941,
+    "seed": 84
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00084.npz"
+  },
+  {
+   "index": 85,
+   "condition": {
+    "mass": 0.3271,
+    "friction": 0.717,
+    "transport_speed": 0.8,
+    "transport_accel": 12.0,
+    "grasp_x_offset": -0.0068,
+    "disturb_offset": 3,
+    "disturb_accel": 4.408,
+    "seed": 85
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00085.npz"
+  },
+  {
+   "index": 86,
+   "condition": {
+    "mass": 0.2171,
+    "friction": 0.3803,
+    "transport_speed": 1.2,
+    "transport_accel": 12.0,
+    "grasp_x_offset": 0.00514,
+    "disturb_offset": 9,
+    "disturb_accel": 2.353,
+    "seed": 86
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 46,
+   "loss_step": 49,
+   "first_slip_step": 39,
+   "file": "episode_00086.npz"
+  },
+  {
+   "index": 87,
+   "condition": {
+    "mass": 0.247,
+    "friction": 0.5124,
+    "transport_speed": 0.8,
+    "transport_accel": 12.0,
+    "grasp_x_offset": 0.00045,
+    "disturb_offset": 6,
+    "disturb_accel": 2.843,
+    "seed": 87
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00087.npz"
+  },
+  {
+   "index": 88,
+   "condition": {
+    "mass": 0.3731,
+    "friction": 0.6541,
+    "transport_speed": 1.2,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.0018,
+    "disturb_offset": 4,
+    "disturb_accel": 4.735,
+    "seed": 88
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 47,
+   "loss_step": -1,
+   "first_slip_step": 44,
+   "file": "episode_00088.npz"
+  },
+  {
+   "index": 89,
+   "condition": {
+    "mass": 0.2691,
+    "friction": 0.4864,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.0018,
+    "disturb_offset": 6,
+    "disturb_accel": 4.886,
+    "seed": 89
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": 47,
+   "file": "episode_00089.npz"
+  },
+  {
+   "index": 90,
+   "condition": {
+    "mass": 0.284,
+    "friction": 0.6046,
+    "transport_speed": 1.2,
+    "transport_accel": 12.0,
+    "grasp_x_offset": -0.00115,
+    "disturb_offset": 3,
+    "disturb_accel": 0.651,
+    "seed": 90
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 46,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00090.npz"
+  },
+  {
+   "index": 91,
+   "condition": {
+    "mass": 0.4563,
+    "friction": 0.7738,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": -0.00781,
+    "disturb_offset": 3,
+    "disturb_accel": 3.864,
+    "seed": 91
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00091.npz"
+  },
+  {
+   "index": 92,
+   "condition": {
+    "mass": 0.2139,
+    "friction": 0.7872,
+    "transport_speed": 1.2,
+    "transport_accel": 12.0,
+    "grasp_x_offset": 0.00737,
+    "disturb_offset": 1,
+    "disturb_accel": 4.121,
+    "seed": 92
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 46,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00092.npz"
+  },
+  {
+   "index": 93,
+   "condition": {
+    "mass": 0.4415,
+    "friction": 0.6436,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00695,
+    "disturb_offset": 3,
+    "disturb_accel": 3.518,
+    "seed": 93
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 43,
+   "first_slip_step": 40,
+   "file": "episode_00093.npz"
+  },
+  {
+   "index": 94,
+   "condition": {
+    "mass": 0.4207,
+    "friction": 0.5754,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": -0.00327,
+    "disturb_offset": 5,
+    "disturb_accel": 1.144,
+    "seed": 94
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 47,
+   "first_slip_step": 28,
+   "file": "episode_00094.npz"
+  },
+  {
+   "index": 95,
+   "condition": {
+    "mass": 0.1548,
+    "friction": 0.5453,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00183,
+    "disturb_offset": 8,
+    "disturb_accel": 2.593,
+    "seed": 95
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00095.npz"
+  },
+  {
+   "index": 96,
+   "condition": {
+    "mass": 0.401,
+    "friction": 0.568,
+    "transport_speed": 0.8,
+    "transport_accel": 12.0,
+    "grasp_x_offset": 0.00442,
+    "disturb_offset": 3,
+    "disturb_accel": 2.076,
+    "seed": 96
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 42,
+   "first_slip_step": 39,
+   "file": "episode_00096.npz"
+  },
+  {
+   "index": 97,
+   "condition": {
+    "mass": 0.2033,
+    "friction": 0.4397,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00019,
+    "disturb_offset": 5,
+    "disturb_accel": 1.557,
+    "seed": 97
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00097.npz"
+  },
+  {
+   "index": 98,
+   "condition": {
+    "mass": 0.423,
+    "friction": 0.7408,
+    "transport_speed": 0.8,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00013,
+    "disturb_offset": 4,
+    "disturb_accel": 5.779,
+    "seed": 98
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 46,
+   "first_slip_step": 43,
+   "file": "episode_00098.npz"
+  },
+  {
+   "index": 99,
+   "condition": {
+    "mass": 0.2016,
+    "friction": 0.4764,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00109,
+    "disturb_offset": 8,
+    "disturb_accel": 7.2,
+    "seed": 99
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00099.npz"
+  },
+  {
+   "index": 100,
+   "condition": {
+    "mass": 0.3068,
+    "friction": 0.533,
+    "transport_speed": 0.8,
+    "transport_accel": 5.0,
+    "grasp_x_offset": -0.0043,
+    "disturb_offset": 2,
+    "disturb_accel": 2.117,
+    "seed": 100
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 51,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00100.npz"
+  },
+  {
+   "index": 101,
+   "condition": {
+    "mass": 0.4518,
+    "friction": 0.4718,
+    "transport_speed": 1.2,
+    "transport_accel": 8.0,
+    "grasp_x_offset": 0.00109,
+    "disturb_offset": 7,
+    "disturb_accel": 5.028,
+    "seed": 101
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 27,
+   "file": "episode_00101.npz"
+  },
+  {
+   "index": 102,
+   "condition": {
+    "mass": 0.4634,
+    "friction": 0.4265,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": -0.00605,
+    "disturb_offset": 10,
+    "disturb_accel": 4.274,
+    "seed": 102
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 27,
+   "file": "episode_00102.npz"
+  },
+  {
+   "index": 103,
+   "condition": {
+    "mass": 0.208,
+    "friction": 0.7132,
+    "transport_speed": 0.8,
+    "transport_accel": 5.0,
+    "grasp_x_offset": -0.00201,
+    "disturb_offset": 1,
+    "disturb_accel": 3.786,
+    "seed": 103
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 51,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00103.npz"
+  },
+  {
+   "index": 104,
+   "condition": {
+    "mass": 0.2258,
+    "friction": 0.5102,
+    "transport_speed": 0.8,
+    "transport_accel": 5.0,
+    "grasp_x_offset": -0.00349,
+    "disturb_offset": 5,
+    "disturb_accel": 3.337,
+    "seed": 104
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 51,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00104.npz"
+  },
+  {
+   "index": 105,
+   "condition": {
+    "mass": 0.2851,
+    "friction": 0.625,
+    "transport_speed": 1.2,
+    "transport_accel": 8.0,
+    "grasp_x_offset": 0.00256,
+    "disturb_offset": 7,
+    "disturb_accel": 0.678,
+    "seed": 105
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 47,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00105.npz"
+  },
+  {
+   "index": 106,
+   "condition": {
+    "mass": 0.3537,
+    "friction": 0.6812,
+    "transport_speed": 0.8,
+    "transport_accel": 12.0,
+    "grasp_x_offset": 0.00142,
+    "disturb_offset": 9,
+    "disturb_accel": 0.67,
+    "seed": 106
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00106.npz"
+  },
+  {
+   "index": 107,
+   "condition": {
+    "mass": 0.2631,
+    "friction": 0.7674,
+    "transport_speed": 0.8,
+    "transport_accel": 12.0,
+    "grasp_x_offset": 0.00633,
+    "disturb_offset": 5,
+    "disturb_accel": 3.677,
+    "seed": 107
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00107.npz"
+  },
+  {
+   "index": 108,
+   "condition": {
+    "mass": 0.4143,
+    "friction": 0.5683,
+    "transport_speed": 0.8,
+    "transport_accel": 12.0,
+    "grasp_x_offset": -0.00293,
+    "disturb_offset": 2,
+    "disturb_accel": 2.126,
+    "seed": 108
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 41,
+   "first_slip_step": 28,
+   "file": "episode_00108.npz"
+  },
+  {
+   "index": 109,
+   "condition": {
+    "mass": 0.1522,
+    "friction": 0.6745,
+    "transport_speed": 1.2,
+    "transport_accel": 12.0,
+    "grasp_x_offset": 0.00251,
+    "disturb_offset": 7,
+    "disturb_accel": 5.499,
+    "seed": 109
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 46,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00109.npz"
+  },
+  {
+   "index": 110,
+   "condition": {
+    "mass": 0.3552,
+    "friction": 0.4019,
+    "transport_speed": 1.2,
+    "transport_accel": 12.0,
+    "grasp_x_offset": -0.00789,
+    "disturb_offset": 5,
+    "disturb_accel": 3.367,
+    "seed": 110
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 27,
+   "file": "episode_00110.npz"
+  },
+  {
+   "index": 111,
+   "condition": {
+    "mass": 0.2824,
+    "friction": 0.4035,
+    "transport_speed": 0.8,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00198,
+    "disturb_offset": 5,
+    "disturb_accel": 3.02,
+    "seed": 111
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 46,
+   "first_slip_step": 43,
+   "file": "episode_00111.npz"
+  },
+  {
+   "index": 112,
+   "condition": {
+    "mass": 0.398,
+    "friction": 0.4539,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00398,
+    "disturb_offset": 3,
+    "disturb_accel": 3.435,
+    "seed": 112
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 27,
+   "file": "episode_00112.npz"
+  },
+  {
+   "index": 113,
+   "condition": {
+    "mass": 0.1979,
+    "friction": 0.6487,
+    "transport_speed": 1.2,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.00538,
+    "disturb_offset": 8,
+    "disturb_accel": 5.514,
+    "seed": 113
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 47,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00113.npz"
+  },
+  {
+   "index": 114,
+   "condition": {
+    "mass": 0.2745,
+    "friction": 0.7618,
+    "transport_speed": 1.2,
+    "transport_accel": 12.0,
+    "grasp_x_offset": -0.00362,
+    "disturb_offset": 7,
+    "disturb_accel": 0.202,
+    "seed": 114
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 46,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00114.npz"
+  },
+  {
+   "index": 115,
+   "condition": {
+    "mass": 0.2147,
+    "friction": 0.4589,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00042,
+    "disturb_offset": 8,
+    "disturb_accel": 3.715,
+    "seed": 115
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00115.npz"
+  },
+  {
+   "index": 116,
+   "condition": {
+    "mass": 0.2279,
+    "friction": 0.6904,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": -0.00404,
+    "disturb_offset": 4,
+    "disturb_accel": 3.608,
+    "seed": 116
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00116.npz"
+  },
+  {
+   "index": 117,
+   "condition": {
+    "mass": 0.4569,
+    "friction": 0.6207,
+    "transport_speed": 1.2,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.005,
+    "disturb_offset": 8,
+    "disturb_accel": 2.53,
+    "seed": 117
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 41,
+   "first_slip_step": 27,
+   "file": "episode_00117.npz"
+  },
+  {
+   "index": 118,
+   "condition": {
+    "mass": 0.2818,
+    "friction": 0.5724,
+    "transport_speed": 1.2,
+    "transport_accel": 8.0,
+    "grasp_x_offset": 0.00516,
+    "disturb_offset": 6,
+    "disturb_accel": 6.812,
+    "seed": 118
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 47,
+   "loss_step": 48,
+   "first_slip_step": -1,
+   "file": "episode_00118.npz"
+  },
+  {
+   "index": 119,
+   "condition": {
+    "mass": 0.4612,
+    "friction": 0.384,
+    "transport_speed": 0.8,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.00332,
+    "disturb_offset": 1,
+    "disturb_accel": 3.206,
+    "seed": 119
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 26,
+   "file": "episode_00119.npz"
+  },
+  {
+   "index": 120,
+   "condition": {
+    "mass": 0.4897,
+    "friction": 0.3821,
+    "transport_speed": 0.8,
+    "transport_accel": 12.0,
+    "grasp_x_offset": -0.00039,
+    "disturb_offset": 6,
+    "disturb_accel": 2.929,
+    "seed": 120
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 26,
+   "file": "episode_00120.npz"
+  },
+  {
+   "index": 121,
+   "condition": {
+    "mass": 0.2833,
+    "friction": 0.4596,
+    "transport_speed": 0.8,
+    "transport_accel": 12.0,
+    "grasp_x_offset": -0.00128,
+    "disturb_offset": 3,
+    "disturb_accel": 7.698,
+    "seed": 121
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 42,
+   "first_slip_step": 41,
+   "file": "episode_00121.npz"
+  },
+  {
+   "index": 122,
+   "condition": {
+    "mass": 0.3106,
+    "friction": 0.7776,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": -0.00694,
+    "disturb_offset": 5,
+    "disturb_accel": 5.328,
+    "seed": 122
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00122.npz"
+  },
+  {
+   "index": 123,
+   "condition": {
+    "mass": 0.2271,
+    "friction": 0.6094,
+    "transport_speed": 0.8,
+    "transport_accel": 12.0,
+    "grasp_x_offset": -0.00269,
+    "disturb_offset": 8,
+    "disturb_accel": 1.965,
+    "seed": 123
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00123.npz"
+  },
+  {
+   "index": 124,
+   "condition": {
+    "mass": 0.4039,
+    "friction": 0.5642,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": -0.0066,
+    "disturb_offset": 1,
+    "disturb_accel": 6.883,
+    "seed": 124
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 40,
+   "first_slip_step": 28,
+   "file": "episode_00124.npz"
+  },
+  {
+   "index": 125,
+   "condition": {
+    "mass": 0.4616,
+    "friction": 0.5795,
+    "transport_speed": 1.2,
+    "transport_accel": 12.0,
+    "grasp_x_offset": -0.00439,
+    "disturb_offset": 2,
+    "disturb_accel": 3.628,
+    "seed": 125
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 27,
+   "file": "episode_00125.npz"
+  },
+  {
+   "index": 126,
+   "condition": {
+    "mass": 0.4482,
+    "friction": 0.6426,
+    "transport_speed": 0.8,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.0041,
+    "disturb_offset": 4,
+    "disturb_accel": 7.862,
+    "seed": 126
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 43,
+   "first_slip_step": 42,
+   "file": "episode_00126.npz"
+  },
+  {
+   "index": 127,
+   "condition": {
+    "mass": 0.3001,
+    "friction": 0.7267,
+    "transport_speed": 0.8,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00349,
+    "disturb_offset": 1,
+    "disturb_accel": 3.188,
+    "seed": 127
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 51,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00127.npz"
+  },
+  {
+   "index": 128,
+   "condition": {
+    "mass": 0.3247,
+    "friction": 0.4395,
+    "transport_speed": 1.2,
+    "transport_accel": 12.0,
+    "grasp_x_offset": -0.00481,
+    "disturb_offset": 9,
+    "disturb_accel": 4.779,
+    "seed": 128
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 40,
+   "first_slip_step": 27,
+   "file": "episode_00128.npz"
+  },
+  {
+   "index": 129,
+   "condition": {
+    "mass": 0.4505,
+    "friction": 0.56,
+    "transport_speed": 1.2,
+    "transport_accel": 12.0,
+    "grasp_x_offset": 0.00038,
+    "disturb_offset": 9,
+    "disturb_accel": 7.651,
+    "seed": 129
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 27,
+   "file": "episode_00129.npz"
+  },
+  {
+   "index": 130,
+   "condition": {
+    "mass": 0.4008,
+    "friction": 0.7604,
+    "transport_speed": 0.8,
+    "transport_accel": 12.0,
+    "grasp_x_offset": 0.00484,
+    "disturb_offset": 8,
+    "disturb_accel": 0.995,
+    "seed": 130
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00130.npz"
+  },
+  {
+   "index": 131,
+   "condition": {
+    "mass": 0.3657,
+    "friction": 0.472,
+    "transport_speed": 0.8,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.00522,
+    "disturb_offset": 4,
+    "disturb_accel": 6.097,
+    "seed": 131
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 30,
+   "first_slip_step": 27,
+   "file": "episode_00131.npz"
+  },
+  {
+   "index": 132,
+   "condition": {
+    "mass": 0.4491,
+    "friction": 0.4098,
+    "transport_speed": 1.2,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.00168,
+    "disturb_offset": 1,
+    "disturb_accel": 3.72,
+    "seed": 132
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 27,
+   "file": "episode_00132.npz"
+  },
+  {
+   "index": 133,
+   "condition": {
+    "mass": 0.4058,
+    "friction": 0.6047,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": -0.00129,
+    "disturb_offset": 10,
+    "disturb_accel": 7.901,
+    "seed": 133
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": 49,
+   "first_slip_step": -1,
+   "file": "episode_00133.npz"
+  },
+  {
+   "index": 134,
+   "condition": {
+    "mass": 0.2954,
+    "friction": 0.4322,
+    "transport_speed": 0.8,
+    "transport_accel": 12.0,
+    "grasp_x_offset": -0.00365,
+    "disturb_offset": 5,
+    "disturb_accel": 5.168,
+    "seed": 134
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 44,
+   "first_slip_step": 39,
+   "file": "episode_00134.npz"
+  },
+  {
+   "index": 135,
+   "condition": {
+    "mass": 0.2199,
+    "friction": 0.3655,
+    "transport_speed": 1.2,
+    "transport_accel": 8.0,
+    "grasp_x_offset": 0.00508,
+    "disturb_offset": 10,
+    "disturb_accel": 0.99,
+    "seed": 135
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 47,
+   "loss_step": -1,
+   "first_slip_step": 40,
+   "file": "episode_00135.npz"
+  },
+  {
+   "index": 136,
+   "condition": {
+    "mass": 0.4468,
+    "friction": 0.4662,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00436,
+    "disturb_offset": 4,
+    "disturb_accel": 6.768,
+    "seed": 136
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 27,
+   "file": "episode_00136.npz"
+  },
+  {
+   "index": 137,
+   "condition": {
+    "mass": 0.1978,
+    "friction": 0.6864,
+    "transport_speed": 1.2,
+    "transport_accel": 12.0,
+    "grasp_x_offset": -0.00279,
+    "disturb_offset": 5,
+    "disturb_accel": 5.874,
+    "seed": 137
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 46,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00137.npz"
+  },
+  {
+   "index": 138,
+   "condition": {
+    "mass": 0.4458,
+    "friction": 0.4951,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00787,
+    "disturb_offset": 6,
+    "disturb_accel": 2.319,
+    "seed": 138
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 27,
+   "file": "episode_00138.npz"
+  },
+  {
+   "index": 139,
+   "condition": {
+    "mass": 0.435,
+    "friction": 0.3904,
+    "transport_speed": 1.2,
+    "transport_accel": 8.0,
+    "grasp_x_offset": 0.00439,
+    "disturb_offset": 10,
+    "disturb_accel": 1.575,
+    "seed": 139
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 26,
+   "file": "episode_00139.npz"
+  },
+  {
+   "index": 140,
+   "condition": {
+    "mass": 0.2535,
+    "friction": 0.618,
+    "transport_speed": 0.8,
+    "transport_accel": 8.0,
+    "grasp_x_offset": 0.00378,
+    "disturb_offset": 2,
+    "disturb_accel": 1.656,
+    "seed": 140
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 50,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00140.npz"
+  },
+  {
+   "index": 141,
+   "condition": {
+    "mass": 0.3635,
+    "friction": 0.3563,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": -0.00542,
+    "disturb_offset": 2,
+    "disturb_accel": 2.829,
+    "seed": 141
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 26,
+   "file": "episode_00141.npz"
+  },
+  {
+   "index": 142,
+   "condition": {
+    "mass": 0.1542,
+    "friction": 0.7685,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": -0.00367,
+    "disturb_offset": 9,
+    "disturb_accel": 7.526,
+    "seed": 142
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00142.npz"
+  },
+  {
+   "index": 143,
+   "condition": {
+    "mass": 0.2731,
+    "friction": 0.544,
+    "transport_speed": 0.8,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00762,
+    "disturb_offset": 3,
+    "disturb_accel": 2.919,
+    "seed": 143
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 51,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00143.npz"
+  },
+  {
+   "index": 144,
+   "condition": {
+    "mass": 0.1792,
+    "friction": 0.6461,
+    "transport_speed": 1.2,
+    "transport_accel": 12.0,
+    "grasp_x_offset": -0.00204,
+    "disturb_offset": 6,
+    "disturb_accel": 3.274,
+    "seed": 144
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 46,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00144.npz"
+  },
+  {
+   "index": 145,
+   "condition": {
+    "mass": 0.3037,
+    "friction": 0.7979,
+    "transport_speed": 0.8,
+    "transport_accel": 12.0,
+    "grasp_x_offset": 0.00193,
+    "disturb_offset": 9,
+    "disturb_accel": 1.551,
+    "seed": 145
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00145.npz"
+  },
+  {
+   "index": 146,
+   "condition": {
+    "mass": 0.3908,
+    "friction": 0.6915,
+    "transport_speed": 0.8,
+    "transport_accel": 5.0,
+    "grasp_x_offset": -0.00193,
+    "disturb_offset": 3,
+    "disturb_accel": 4.563,
+    "seed": 146
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 51,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00146.npz"
+  },
+  {
+   "index": 147,
+   "condition": {
+    "mass": 0.3786,
+    "friction": 0.4316,
+    "transport_speed": 0.8,
+    "transport_accel": 8.0,
+    "grasp_x_offset": 0.00787,
+    "disturb_offset": 5,
+    "disturb_accel": 0.127,
+    "seed": 147
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 27,
+   "file": "episode_00147.npz"
+  },
+  {
+   "index": 148,
+   "condition": {
+    "mass": 0.2798,
+    "friction": 0.5004,
+    "transport_speed": 1.2,
+    "transport_accel": 8.0,
+    "grasp_x_offset": 0.00591,
+    "disturb_offset": 2,
+    "disturb_accel": 7.065,
+    "seed": 148
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 42,
+   "first_slip_step": 40,
+   "file": "episode_00148.npz"
+  },
+  {
+   "index": 149,
+   "condition": {
+    "mass": 0.3514,
+    "friction": 0.5411,
+    "transport_speed": 0.8,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00518,
+    "disturb_offset": 3,
+    "disturb_accel": 5.154,
+    "seed": 149
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 43,
+   "first_slip_step": 41,
+   "file": "episode_00149.npz"
+  },
+  {
+   "index": 150,
+   "condition": {
+    "mass": 0.2243,
+    "friction": 0.4085,
+    "transport_speed": 0.8,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00655,
+    "disturb_offset": 5,
+    "disturb_accel": 6.562,
+    "seed": 150
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 46,
+   "first_slip_step": 44,
+   "file": "episode_00150.npz"
+  },
+  {
+   "index": 151,
+   "condition": {
+    "mass": 0.4634,
+    "friction": 0.4518,
+    "transport_speed": 0.8,
+    "transport_accel": 5.0,
+    "grasp_x_offset": -0.00511,
+    "disturb_offset": 1,
+    "disturb_accel": 6.184,
+    "seed": 151
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 27,
+   "file": "episode_00151.npz"
+  },
+  {
+   "index": 152,
+   "condition": {
+    "mass": 0.1554,
+    "friction": 0.6039,
+    "transport_speed": 0.8,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00427,
+    "disturb_offset": 7,
+    "disturb_accel": 4.393,
+    "seed": 152
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 51,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00152.npz"
+  },
+  {
+   "index": 153,
+   "condition": {
+    "mass": 0.2527,
+    "friction": 0.5555,
+    "transport_speed": 0.8,
+    "transport_accel": 12.0,
+    "grasp_x_offset": 0.00495,
+    "disturb_offset": 1,
+    "disturb_accel": 7.26,
+    "seed": 153
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00153.npz"
+  },
+  {
+   "index": 154,
+   "condition": {
+    "mass": 0.4134,
+    "friction": 0.573,
+    "transport_speed": 1.2,
+    "transport_accel": 12.0,
+    "grasp_x_offset": -0.00794,
+    "disturb_offset": 6,
+    "disturb_accel": 6.139,
+    "seed": 154
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 40,
+   "first_slip_step": 28,
+   "file": "episode_00154.npz"
+  },
+  {
+   "index": 155,
+   "condition": {
+    "mass": 0.2643,
+    "friction": 0.7355,
+    "transport_speed": 1.2,
+    "transport_accel": 12.0,
+    "grasp_x_offset": 0.00211,
+    "disturb_offset": 1,
+    "disturb_accel": 2.408,
+    "seed": 155
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 46,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00155.npz"
+  },
+  {
+   "index": 156,
+   "condition": {
+    "mass": 0.37,
+    "friction": 0.4631,
+    "transport_speed": 0.8,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00202,
+    "disturb_offset": 8,
+    "disturb_accel": 1.498,
+    "seed": 156
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 27,
+   "file": "episode_00156.npz"
+  },
+  {
+   "index": 157,
+   "condition": {
+    "mass": 0.4602,
+    "friction": 0.7471,
+    "transport_speed": 0.8,
+    "transport_accel": 8.0,
+    "grasp_x_offset": 0.0033,
+    "disturb_offset": 6,
+    "disturb_accel": 3.611,
+    "seed": 157
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 50,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00157.npz"
+  },
+  {
+   "index": 158,
+   "condition": {
+    "mass": 0.4305,
+    "friction": 0.7252,
+    "transport_speed": 0.8,
+    "transport_accel": 12.0,
+    "grasp_x_offset": -0.00411,
+    "disturb_offset": 7,
+    "disturb_accel": 5.266,
+    "seed": 158
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": 49,
+   "first_slip_step": 46,
+   "file": "episode_00158.npz"
+  },
+  {
+   "index": 159,
+   "condition": {
+    "mass": 0.2939,
+    "friction": 0.7524,
+    "transport_speed": 0.8,
+    "transport_accel": 8.0,
+    "grasp_x_offset": 0.00054,
+    "disturb_offset": 9,
+    "disturb_accel": 3.02,
+    "seed": 159
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 50,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00159.npz"
+  },
+  {
+   "index": 160,
+   "condition": {
+    "mass": 0.3995,
+    "friction": 0.6692,
+    "transport_speed": 1.2,
+    "transport_accel": 12.0,
+    "grasp_x_offset": 0.00548,
+    "disturb_offset": 10,
+    "disturb_accel": 4.128,
+    "seed": 160
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 46,
+   "loss_step": 49,
+   "first_slip_step": 39,
+   "file": "episode_00160.npz"
+  },
+  {
+   "index": 161,
+   "condition": {
+    "mass": 0.3309,
+    "friction": 0.75,
+    "transport_speed": 1.2,
+    "transport_accel": 12.0,
+    "grasp_x_offset": 0.00547,
+    "disturb_offset": 4,
+    "disturb_accel": 4.039,
+    "seed": 161
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 46,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00161.npz"
+  },
+  {
+   "index": 162,
+   "condition": {
+    "mass": 0.1799,
+    "friction": 0.552,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00045,
+    "disturb_offset": 1,
+    "disturb_accel": 1.436,
+    "seed": 162
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00162.npz"
+  },
+  {
+   "index": 163,
+   "condition": {
+    "mass": 0.3163,
+    "friction": 0.6121,
+    "transport_speed": 1.2,
+    "transport_accel": 12.0,
+    "grasp_x_offset": 0.00706,
+    "disturb_offset": 8,
+    "disturb_accel": 4.405,
+    "seed": 163
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 46,
+   "loss_step": 48,
+   "first_slip_step": 40,
+   "file": "episode_00163.npz"
+  },
+  {
+   "index": 164,
+   "condition": {
+    "mass": 0.4726,
+    "friction": 0.5015,
+    "transport_speed": 0.8,
+    "transport_accel": 12.0,
+    "grasp_x_offset": 0.00422,
+    "disturb_offset": 4,
+    "disturb_accel": 1.39,
+    "seed": 164
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 27,
+   "file": "episode_00164.npz"
+  },
+  {
+   "index": 165,
+   "condition": {
+    "mass": 0.2852,
+    "friction": 0.4809,
+    "transport_speed": 1.2,
+    "transport_accel": 12.0,
+    "grasp_x_offset": 0.00231,
+    "disturb_offset": 10,
+    "disturb_accel": 7.272,
+    "seed": 165
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 46,
+   "loss_step": 48,
+   "first_slip_step": 39,
+   "file": "episode_00165.npz"
+  },
+  {
+   "index": 166,
+   "condition": {
+    "mass": 0.2537,
+    "friction": 0.543,
+    "transport_speed": 1.2,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.00232,
+    "disturb_offset": 3,
+    "disturb_accel": 4.794,
+    "seed": 166
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 47,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00166.npz"
+  },
+  {
+   "index": 167,
+   "condition": {
+    "mass": 0.1599,
+    "friction": 0.5029,
+    "transport_speed": 0.8,
+    "transport_accel": 5.0,
+    "grasp_x_offset": -0.00028,
+    "disturb_offset": 1,
+    "disturb_accel": 4.864,
+    "seed": 167
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 51,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00167.npz"
+  },
+  {
+   "index": 168,
+   "condition": {
+    "mass": 0.1825,
+    "friction": 0.4589,
+    "transport_speed": 1.2,
+    "transport_accel": 12.0,
+    "grasp_x_offset": 0.00544,
+    "disturb_offset": 7,
+    "disturb_accel": 6.514,
+    "seed": 168
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 46,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00168.npz"
+  },
+  {
+   "index": 169,
+   "condition": {
+    "mass": 0.247,
+    "friction": 0.6677,
+    "transport_speed": 0.8,
+    "transport_accel": 12.0,
+    "grasp_x_offset": -0.00096,
+    "disturb_offset": 6,
+    "disturb_accel": 5.252,
+    "seed": 169
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00169.npz"
+  },
+  {
+   "index": 170,
+   "condition": {
+    "mass": 0.1547,
+    "friction": 0.4231,
+    "transport_speed": 0.8,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00289,
+    "disturb_offset": 2,
+    "disturb_accel": 5.446,
+    "seed": 170
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 51,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00170.npz"
+  },
+  {
+   "index": 171,
+   "condition": {
+    "mass": 0.4187,
+    "friction": 0.3858,
+    "transport_speed": 1.2,
+    "transport_accel": 8.0,
+    "grasp_x_offset": 0.00569,
+    "disturb_offset": 2,
+    "disturb_accel": 2.855,
+    "seed": 171
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 26,
+   "file": "episode_00171.npz"
+  },
+  {
+   "index": 172,
+   "condition": {
+    "mass": 0.3489,
+    "friction": 0.5766,
+    "transport_speed": 1.2,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.00677,
+    "disturb_offset": 1,
+    "disturb_accel": 0.987,
+    "seed": 172
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 47,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00172.npz"
+  },
+  {
+   "index": 173,
+   "condition": {
+    "mass": 0.3885,
+    "friction": 0.531,
+    "transport_speed": 1.2,
+    "transport_accel": 12.0,
+    "grasp_x_offset": 0.00275,
+    "disturb_offset": 5,
+    "disturb_accel": 2.968,
+    "seed": 173
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 40,
+   "first_slip_step": 28,
+   "file": "episode_00173.npz"
+  },
+  {
+   "index": 174,
+   "condition": {
+    "mass": 0.1661,
+    "friction": 0.7839,
+    "transport_speed": 0.8,
+    "transport_accel": 8.0,
+    "grasp_x_offset": 0.00387,
+    "disturb_offset": 4,
+    "disturb_accel": 6.557,
+    "seed": 174
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 50,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00174.npz"
+  },
+  {
+   "index": 175,
+   "condition": {
+    "mass": 0.3476,
+    "friction": 0.4052,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": -0.00524,
+    "disturb_offset": 7,
+    "disturb_accel": 6.589,
+    "seed": 175
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 27,
+   "file": "episode_00175.npz"
+  },
+  {
+   "index": 176,
+   "condition": {
+    "mass": 0.3884,
+    "friction": 0.7729,
+    "transport_speed": 1.2,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.0044,
+    "disturb_offset": 7,
+    "disturb_accel": 6.174,
+    "seed": 176
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 47,
+   "loss_step": 48,
+   "first_slip_step": -1,
+   "file": "episode_00176.npz"
+  },
+  {
+   "index": 177,
+   "condition": {
+    "mass": 0.3992,
+    "friction": 0.504,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00696,
+    "disturb_offset": 7,
+    "disturb_accel": 5.478,
+    "seed": 177
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 27,
+   "file": "episode_00177.npz"
+  },
+  {
+   "index": 178,
+   "condition": {
+    "mass": 0.2786,
+    "friction": 0.7598,
+    "transport_speed": 0.8,
+    "transport_accel": 12.0,
+    "grasp_x_offset": 0.00568,
+    "disturb_offset": 8,
+    "disturb_accel": 2.327,
+    "seed": 178
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00178.npz"
+  },
+  {
+   "index": 179,
+   "condition": {
+    "mass": 0.4265,
+    "friction": 0.4737,
+    "transport_speed": 0.8,
+    "transport_accel": 12.0,
+    "grasp_x_offset": 0.00293,
+    "disturb_offset": 1,
+    "disturb_accel": 6.394,
+    "seed": 179
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 27,
+   "file": "episode_00179.npz"
+  },
+  {
+   "index": 180,
+   "condition": {
+    "mass": 0.3746,
+    "friction": 0.5052,
+    "transport_speed": 0.8,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.00766,
+    "disturb_offset": 2,
+    "disturb_accel": 6.854,
+    "seed": 180
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 40,
+   "first_slip_step": 27,
+   "file": "episode_00180.npz"
+  },
+  {
+   "index": 181,
+   "condition": {
+    "mass": 0.1773,
+    "friction": 0.5225,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": -0.00192,
+    "disturb_offset": 2,
+    "disturb_accel": 0.104,
+    "seed": 181
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00181.npz"
+  },
+  {
+   "index": 182,
+   "condition": {
+    "mass": 0.4397,
+    "friction": 0.5733,
+    "transport_speed": 0.8,
+    "transport_accel": 8.0,
+    "grasp_x_offset": 0.00163,
+    "disturb_offset": 10,
+    "disturb_accel": 2.33,
+    "seed": 182
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 39,
+   "first_slip_step": 27,
+   "file": "episode_00182.npz"
+  },
+  {
+   "index": 183,
+   "condition": {
+    "mass": 0.2436,
+    "friction": 0.3723,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": -0.00694,
+    "disturb_offset": 3,
+    "disturb_accel": 0.332,
+    "seed": 183
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00183.npz"
+  },
+  {
+   "index": 184,
+   "condition": {
+    "mass": 0.3435,
+    "friction": 0.4327,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00667,
+    "disturb_offset": 10,
+    "disturb_accel": 0.759,
+    "seed": 184
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 27,
+   "file": "episode_00184.npz"
+  },
+  {
+   "index": 185,
+   "condition": {
+    "mass": 0.4897,
+    "friction": 0.6501,
+    "transport_speed": 0.8,
+    "transport_accel": 12.0,
+    "grasp_x_offset": 0.00101,
+    "disturb_offset": 8,
+    "disturb_accel": 0.563,
+    "seed": 185
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 40,
+   "first_slip_step": 27,
+   "file": "episode_00185.npz"
+  },
+  {
+   "index": 186,
+   "condition": {
+    "mass": 0.4447,
+    "friction": 0.5381,
+    "transport_speed": 0.8,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.00584,
+    "disturb_offset": 10,
+    "disturb_accel": 4.178,
+    "seed": 186
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 27,
+   "file": "episode_00186.npz"
+  },
+  {
+   "index": 187,
+   "condition": {
+    "mass": 0.3491,
+    "friction": 0.5834,
+    "transport_speed": 0.8,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00604,
+    "disturb_offset": 7,
+    "disturb_accel": 4.034,
+    "seed": 187
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 51,
+   "loss_step": -1,
+   "first_slip_step": 48,
+   "file": "episode_00187.npz"
+  },
+  {
+   "index": 188,
+   "condition": {
+    "mass": 0.2827,
+    "friction": 0.4655,
+    "transport_speed": 0.8,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00097,
+    "disturb_offset": 5,
+    "disturb_accel": 3.529,
+    "seed": 188
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 51,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00188.npz"
+  },
+  {
+   "index": 189,
+   "condition": {
+    "mass": 0.1643,
+    "friction": 0.4347,
+    "transport_speed": 1.2,
+    "transport_accel": 12.0,
+    "grasp_x_offset": -0.00267,
+    "disturb_offset": 1,
+    "disturb_accel": 5.475,
+    "seed": 189
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 46,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00189.npz"
+  },
+  {
+   "index": 190,
+   "condition": {
+    "mass": 0.3568,
+    "friction": 0.648,
+    "transport_speed": 0.8,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.00624,
+    "disturb_offset": 2,
+    "disturb_accel": 4.088,
+    "seed": 190
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 50,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00190.npz"
+  },
+  {
+   "index": 191,
+   "condition": {
+    "mass": 0.324,
+    "friction": 0.4596,
+    "transport_speed": 0.8,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.00107,
+    "disturb_offset": 9,
+    "disturb_accel": 6.764,
+    "seed": 191
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 48,
+   "first_slip_step": 40,
+   "file": "episode_00191.npz"
+  },
+  {
+   "index": 192,
+   "condition": {
+    "mass": 0.2429,
+    "friction": 0.7739,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00431,
+    "disturb_offset": 5,
+    "disturb_accel": 1.891,
+    "seed": 192
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00192.npz"
+  },
+  {
+   "index": 193,
+   "condition": {
+    "mass": 0.4547,
+    "friction": 0.5075,
+    "transport_speed": 0.8,
+    "transport_accel": 12.0,
+    "grasp_x_offset": 0.00687,
+    "disturb_offset": 10,
+    "disturb_accel": 6.402,
+    "seed": 193
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 27,
+   "file": "episode_00193.npz"
+  },
+  {
+   "index": 194,
+   "condition": {
+    "mass": 0.2886,
+    "friction": 0.7362,
+    "transport_speed": 1.2,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.00598,
+    "disturb_offset": 1,
+    "disturb_accel": 6.53,
+    "seed": 194
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 47,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00194.npz"
+  },
+  {
+   "index": 195,
+   "condition": {
+    "mass": 0.1974,
+    "friction": 0.7399,
+    "transport_speed": 1.2,
+    "transport_accel": 12.0,
+    "grasp_x_offset": 0.0039,
+    "disturb_offset": 6,
+    "disturb_accel": 2.145,
+    "seed": 195
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 46,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00195.npz"
+  },
+  {
+   "index": 196,
+   "condition": {
+    "mass": 0.2254,
+    "friction": 0.7317,
+    "transport_speed": 0.8,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.00564,
+    "disturb_offset": 1,
+    "disturb_accel": 6.872,
+    "seed": 196
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 50,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00196.npz"
+  },
+  {
+   "index": 197,
+   "condition": {
+    "mass": 0.3139,
+    "friction": 0.5016,
+    "transport_speed": 0.8,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00519,
+    "disturb_offset": 4,
+    "disturb_accel": 3.634,
+    "seed": 197
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 51,
+   "loss_step": -1,
+   "first_slip_step": 44,
+   "file": "episode_00197.npz"
+  },
+  {
+   "index": 198,
+   "condition": {
+    "mass": 0.4819,
+    "friction": 0.4905,
+    "transport_speed": 1.2,
+    "transport_accel": 12.0,
+    "grasp_x_offset": -0.00343,
+    "disturb_offset": 1,
+    "disturb_accel": 0.141,
+    "seed": 198
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 27,
+   "file": "episode_00198.npz"
+  },
+  {
+   "index": 199,
+   "condition": {
+    "mass": 0.1954,
+    "friction": 0.4667,
+    "transport_speed": 1.2,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.00284,
+    "disturb_offset": 9,
+    "disturb_accel": 3.868,
+    "seed": 199
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 47,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00199.npz"
+  },
+  {
+   "index": 200,
+   "condition": {
+    "mass": 0.1875,
+    "friction": 0.605,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": -0.00573,
+    "disturb_offset": 4,
+    "disturb_accel": 1.951,
+    "seed": 200
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00200.npz"
+  },
+  {
+   "index": 201,
+   "condition": {
+    "mass": 0.1714,
+    "friction": 0.6208,
+    "transport_speed": 1.2,
+    "transport_accel": 12.0,
+    "grasp_x_offset": -0.00715,
+    "disturb_offset": 2,
+    "disturb_accel": 6.644,
+    "seed": 201
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 46,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00201.npz"
+  },
+  {
+   "index": 202,
+   "condition": {
+    "mass": 0.289,
+    "friction": 0.7395,
+    "transport_speed": 0.8,
+    "transport_accel": 12.0,
+    "grasp_x_offset": -0.00478,
+    "disturb_offset": 2,
+    "disturb_accel": 1.371,
+    "seed": 202
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00202.npz"
+  },
+  {
+   "index": 203,
+   "condition": {
+    "mass": 0.3231,
+    "friction": 0.511,
+    "transport_speed": 0.8,
+    "transport_accel": 5.0,
+    "grasp_x_offset": -0.00049,
+    "disturb_offset": 9,
+    "disturb_accel": 4.438,
+    "seed": 203
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 50,
+   "first_slip_step": 48,
+   "file": "episode_00203.npz"
+  },
+  {
+   "index": 204,
+   "condition": {
+    "mass": 0.2856,
+    "friction": 0.6897,
+    "transport_speed": 0.8,
+    "transport_accel": 12.0,
+    "grasp_x_offset": 0.00297,
+    "disturb_offset": 10,
+    "disturb_accel": 3.189,
+    "seed": 204
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00204.npz"
+  },
+  {
+   "index": 205,
+   "condition": {
+    "mass": 0.1917,
+    "friction": 0.7181,
+    "transport_speed": 1.2,
+    "transport_accel": 8.0,
+    "grasp_x_offset": 0.00307,
+    "disturb_offset": 4,
+    "disturb_accel": 7.908,
+    "seed": 205
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 47,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00205.npz"
+  },
+  {
+   "index": 206,
+   "condition": {
+    "mass": 0.3956,
+    "friction": 0.758,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00166,
+    "disturb_offset": 2,
+    "disturb_accel": 6.98,
+    "seed": 206
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": 42,
+   "file": "episode_00206.npz"
+  },
+  {
+   "index": 207,
+   "condition": {
+    "mass": 0.4861,
+    "friction": 0.3654,
+    "transport_speed": 0.8,
+    "transport_accel": 8.0,
+    "grasp_x_offset": 0.00532,
+    "disturb_offset": 2,
+    "disturb_accel": 5.495,
+    "seed": 207
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 26,
+   "file": "episode_00207.npz"
+  },
+  {
+   "index": 208,
+   "condition": {
+    "mass": 0.4936,
+    "friction": 0.6904,
+    "transport_speed": 1.2,
+    "transport_accel": 8.0,
+    "grasp_x_offset": 0.00063,
+    "disturb_offset": 3,
+    "disturb_accel": 6.271,
+    "seed": 208
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 41,
+   "first_slip_step": 39,
+   "file": "episode_00208.npz"
+  },
+  {
+   "index": 209,
+   "condition": {
+    "mass": 0.2844,
+    "friction": 0.398,
+    "transport_speed": 0.8,
+    "transport_accel": 12.0,
+    "grasp_x_offset": -0.00208,
+    "disturb_offset": 6,
+    "disturb_accel": 4.847,
+    "seed": 209
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 45,
+   "first_slip_step": 39,
+   "file": "episode_00209.npz"
+  },
+  {
+   "index": 210,
+   "condition": {
+    "mass": 0.1558,
+    "friction": 0.4242,
+    "transport_speed": 1.2,
+    "transport_accel": 8.0,
+    "grasp_x_offset": 0.00176,
+    "disturb_offset": 4,
+    "disturb_accel": 5.091,
+    "seed": 210
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 47,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00210.npz"
+  },
+  {
+   "index": 211,
+   "condition": {
+    "mass": 0.4444,
+    "friction": 0.4791,
+    "transport_speed": 0.8,
+    "transport_accel": 8.0,
+    "grasp_x_offset": 0.0065,
+    "disturb_offset": 6,
+    "disturb_accel": 5.624,
+    "seed": 211
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 27,
+   "file": "episode_00211.npz"
+  },
+  {
+   "index": 212,
+   "condition": {
+    "mass": 0.2224,
+    "friction": 0.7849,
+    "transport_speed": 1.2,
+    "transport_accel": 8.0,
+    "grasp_x_offset": 0.00519,
+    "disturb_offset": 2,
+    "disturb_accel": 6.318,
+    "seed": 212
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 47,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00212.npz"
+  },
+  {
+   "index": 213,
+   "condition": {
+    "mass": 0.4723,
+    "friction": 0.7562,
+    "transport_speed": 0.8,
+    "transport_accel": 12.0,
+    "grasp_x_offset": -0.00283,
+    "disturb_offset": 9,
+    "disturb_accel": 7.301,
+    "seed": 213
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": 49,
+   "first_slip_step": 47,
+   "file": "episode_00213.npz"
+  },
+  {
+   "index": 214,
+   "condition": {
+    "mass": 0.2037,
+    "friction": 0.4671,
+    "transport_speed": 0.8,
+    "transport_accel": 8.0,
+    "grasp_x_offset": 0.00397,
+    "disturb_offset": 2,
+    "disturb_accel": 2.151,
+    "seed": 214
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 50,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00214.npz"
+  },
+  {
+   "index": 215,
+   "condition": {
+    "mass": 0.2792,
+    "friction": 0.7313,
+    "transport_speed": 0.8,
+    "transport_accel": 12.0,
+    "grasp_x_offset": 0.00624,
+    "disturb_offset": 1,
+    "disturb_accel": 2.678,
+    "seed": 215
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00215.npz"
+  },
+  {
+   "index": 216,
+   "condition": {
+    "mass": 0.3658,
+    "friction": 0.7711,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00072,
+    "disturb_offset": 10,
+    "disturb_accel": 5.618,
+    "seed": 216
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00216.npz"
+  },
+  {
+   "index": 217,
+   "condition": {
+    "mass": 0.4362,
+    "friction": 0.4608,
+    "transport_speed": 0.8,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.00516,
+    "disturb_offset": 9,
+    "disturb_accel": 3.841,
+    "seed": 217
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 27,
+   "file": "episode_00217.npz"
+  },
+  {
+   "index": 218,
+   "condition": {
+    "mass": 0.1959,
+    "friction": 0.4884,
+    "transport_speed": 0.8,
+    "transport_accel": 8.0,
+    "grasp_x_offset": 0.00312,
+    "disturb_offset": 8,
+    "disturb_accel": 4.237,
+    "seed": 218
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 50,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00218.npz"
+  },
+  {
+   "index": 219,
+   "condition": {
+    "mass": 0.378,
+    "friction": 0.7036,
+    "transport_speed": 0.8,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.0071,
+    "disturb_offset": 3,
+    "disturb_accel": 1.896,
+    "seed": 219
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 50,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00219.npz"
+  },
+  {
+   "index": 220,
+   "condition": {
+    "mass": 0.3411,
+    "friction": 0.745,
+    "transport_speed": 1.2,
+    "transport_accel": 8.0,
+    "grasp_x_offset": 0.00172,
+    "disturb_offset": 6,
+    "disturb_accel": 3.984,
+    "seed": 220
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 47,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00220.npz"
+  },
+  {
+   "index": 221,
+   "condition": {
+    "mass": 0.2658,
+    "friction": 0.5063,
+    "transport_speed": 0.8,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.00538,
+    "disturb_offset": 10,
+    "disturb_accel": 0.707,
+    "seed": 221
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 50,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00221.npz"
+  },
+  {
+   "index": 222,
+   "condition": {
+    "mass": 0.2568,
+    "friction": 0.6392,
+    "transport_speed": 0.8,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00329,
+    "disturb_offset": 5,
+    "disturb_accel": 3.506,
+    "seed": 222
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 51,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00222.npz"
+  },
+  {
+   "index": 223,
+   "condition": {
+    "mass": 0.4421,
+    "friction": 0.4957,
+    "transport_speed": 1.2,
+    "transport_accel": 8.0,
+    "grasp_x_offset": 0.00064,
+    "disturb_offset": 7,
+    "disturb_accel": 0.574,
+    "seed": 223
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 27,
+   "file": "episode_00223.npz"
+  },
+  {
+   "index": 224,
+   "condition": {
+    "mass": 0.2715,
+    "friction": 0.6034,
+    "transport_speed": 0.8,
+    "transport_accel": 12.0,
+    "grasp_x_offset": 0.00454,
+    "disturb_offset": 8,
+    "disturb_accel": 1.572,
+    "seed": 224
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00224.npz"
+  },
+  {
+   "index": 225,
+   "condition": {
+    "mass": 0.2445,
+    "friction": 0.3691,
+    "transport_speed": 0.8,
+    "transport_accel": 12.0,
+    "grasp_x_offset": -0.00121,
+    "disturb_offset": 6,
+    "disturb_accel": 5.268,
+    "seed": 225
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 46,
+   "first_slip_step": 39,
+   "file": "episode_00225.npz"
+  },
+  {
+   "index": 226,
+   "condition": {
+    "mass": 0.336,
+    "friction": 0.5376,
+    "transport_speed": 1.2,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.00735,
+    "disturb_offset": 2,
+    "disturb_accel": 0.602,
+    "seed": 226
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 47,
+   "loss_step": -1,
+   "first_slip_step": 41,
+   "file": "episode_00226.npz"
+  },
+  {
+   "index": 227,
+   "condition": {
+    "mass": 0.1589,
+    "friction": 0.4469,
+    "transport_speed": 1.2,
+    "transport_accel": 8.0,
+    "grasp_x_offset": 0.00471,
+    "disturb_offset": 2,
+    "disturb_accel": 1.213,
+    "seed": 227
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 47,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00227.npz"
+  },
+  {
+   "index": 228,
+   "condition": {
+    "mass": 0.269,
+    "friction": 0.356,
+    "transport_speed": 1.2,
+    "transport_accel": 12.0,
+    "grasp_x_offset": -0.00286,
+    "disturb_offset": 1,
+    "disturb_accel": 7.695,
+    "seed": 228
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 39,
+   "first_slip_step": 27,
+   "file": "episode_00228.npz"
+  },
+  {
+   "index": 229,
+   "condition": {
+    "mass": 0.4046,
+    "friction": 0.4673,
+    "transport_speed": 1.2,
+    "transport_accel": 12.0,
+    "grasp_x_offset": 0.00452,
+    "disturb_offset": 5,
+    "disturb_accel": 5.589,
+    "seed": 229
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 27,
+   "file": "episode_00229.npz"
+  },
+  {
+   "index": 230,
+   "condition": {
+    "mass": 0.4397,
+    "friction": 0.5951,
+    "transport_speed": 0.8,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.00219,
+    "disturb_offset": 10,
+    "disturb_accel": 5.578,
+    "seed": 230
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 42,
+   "first_slip_step": 28,
+   "file": "episode_00230.npz"
+  },
+  {
+   "index": 231,
+   "condition": {
+    "mass": 0.151,
+    "friction": 0.7027,
+    "transport_speed": 0.8,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00187,
+    "disturb_offset": 1,
+    "disturb_accel": 4.757,
+    "seed": 231
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 51,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00231.npz"
+  },
+  {
+   "index": 232,
+   "condition": {
+    "mass": 0.1869,
+    "friction": 0.6165,
+    "transport_speed": 0.8,
+    "transport_accel": 12.0,
+    "grasp_x_offset": 0.00058,
+    "disturb_offset": 10,
+    "disturb_accel": 5.669,
+    "seed": 232
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00232.npz"
+  },
+  {
+   "index": 233,
+   "condition": {
+    "mass": 0.2221,
+    "friction": 0.767,
+    "transport_speed": 1.2,
+    "transport_accel": 12.0,
+    "grasp_x_offset": 0.00134,
+    "disturb_offset": 4,
+    "disturb_accel": 0.825,
+    "seed": 233
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 46,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00233.npz"
+  },
+  {
+   "index": 234,
+   "condition": {
+    "mass": 0.4987,
+    "friction": 0.6444,
+    "transport_speed": 1.2,
+    "transport_accel": 8.0,
+    "grasp_x_offset": 0.00106,
+    "disturb_offset": 1,
+    "disturb_accel": 1.921,
+    "seed": 234
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 31,
+   "first_slip_step": 27,
+   "file": "episode_00234.npz"
+  },
+  {
+   "index": 235,
+   "condition": {
+    "mass": 0.4911,
+    "friction": 0.3865,
+    "transport_speed": 0.8,
+    "transport_accel": 12.0,
+    "grasp_x_offset": 0.00117,
+    "disturb_offset": 2,
+    "disturb_accel": 6.192,
+    "seed": 235
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 26,
+   "file": "episode_00235.npz"
+  },
+  {
+   "index": 236,
+   "condition": {
+    "mass": 0.4485,
+    "friction": 0.7376,
+    "transport_speed": 0.8,
+    "transport_accel": 12.0,
+    "grasp_x_offset": -0.00244,
+    "disturb_offset": 10,
+    "disturb_accel": 6.505,
+    "seed": 236
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": 50,
+   "first_slip_step": -1,
+   "file": "episode_00236.npz"
+  },
+  {
+   "index": 237,
+   "condition": {
+    "mass": 0.1986,
+    "friction": 0.3866,
+    "transport_speed": 1.2,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.00303,
+    "disturb_offset": 5,
+    "disturb_accel": 0.03,
+    "seed": 237
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 47,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00237.npz"
+  },
+  {
+   "index": 238,
+   "condition": {
+    "mass": 0.3309,
+    "friction": 0.5178,
+    "transport_speed": 1.2,
+    "transport_accel": 12.0,
+    "grasp_x_offset": -0.00265,
+    "disturb_offset": 1,
+    "disturb_accel": 4.545,
+    "seed": 238
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 41,
+   "first_slip_step": 39,
+   "file": "episode_00238.npz"
+  },
+  {
+   "index": 239,
+   "condition": {
+    "mass": 0.2549,
+    "friction": 0.5604,
+    "transport_speed": 1.2,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.0042,
+    "disturb_offset": 4,
+    "disturb_accel": 0.705,
+    "seed": 239
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 47,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00239.npz"
+  },
+  {
+   "index": 240,
+   "condition": {
+    "mass": 0.1682,
+    "friction": 0.4502,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": -0.00559,
+    "disturb_offset": 9,
+    "disturb_accel": 2.986,
+    "seed": 240
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00240.npz"
+  },
+  {
+   "index": 241,
+   "condition": {
+    "mass": 0.2334,
+    "friction": 0.352,
+    "transport_speed": 0.8,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00784,
+    "disturb_offset": 1,
+    "disturb_accel": 1.961,
+    "seed": 241
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 51,
+   "loss_step": -1,
+   "first_slip_step": 40,
+   "file": "episode_00241.npz"
+  },
+  {
+   "index": 242,
+   "condition": {
+    "mass": 0.1643,
+    "friction": 0.6317,
+    "transport_speed": 1.2,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.00178,
+    "disturb_offset": 8,
+    "disturb_accel": 7.496,
+    "seed": 242
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 47,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00242.npz"
+  },
+  {
+   "index": 243,
+   "condition": {
+    "mass": 0.2887,
+    "friction": 0.5189,
+    "transport_speed": 1.2,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.00425,
+    "disturb_offset": 6,
+    "disturb_accel": 1.392,
+    "seed": 243
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 47,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00243.npz"
+  },
+  {
+   "index": 244,
+   "condition": {
+    "mass": 0.286,
+    "friction": 0.6547,
+    "transport_speed": 0.8,
+    "transport_accel": 5.0,
+    "grasp_x_offset": -0.00579,
+    "disturb_offset": 10,
+    "disturb_accel": 2.657,
+    "seed": 244
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 51,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00244.npz"
+  },
+  {
+   "index": 245,
+   "condition": {
+    "mass": 0.3457,
+    "friction": 0.375,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": -0.00756,
+    "disturb_offset": 6,
+    "disturb_accel": 1.658,
+    "seed": 245
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 27,
+   "file": "episode_00245.npz"
+  },
+  {
+   "index": 246,
+   "condition": {
+    "mass": 0.3068,
+    "friction": 0.5857,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": -0.00066,
+    "disturb_offset": 2,
+    "disturb_accel": 5.646,
+    "seed": 246
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00246.npz"
+  },
+  {
+   "index": 247,
+   "condition": {
+    "mass": 0.2792,
+    "friction": 0.5733,
+    "transport_speed": 1.2,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.00379,
+    "disturb_offset": 8,
+    "disturb_accel": 1.122,
+    "seed": 247
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 47,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00247.npz"
+  },
+  {
+   "index": 248,
+   "condition": {
+    "mass": 0.4892,
+    "friction": 0.7429,
+    "transport_speed": 0.8,
+    "transport_accel": 12.0,
+    "grasp_x_offset": -0.00037,
+    "disturb_offset": 7,
+    "disturb_accel": 5.944,
+    "seed": 248
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 47,
+   "first_slip_step": 40,
+   "file": "episode_00248.npz"
+  },
+  {
+   "index": 249,
+   "condition": {
+    "mass": 0.4266,
+    "friction": 0.7843,
+    "transport_speed": 0.8,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.005,
+    "disturb_offset": 1,
+    "disturb_accel": 2.694,
+    "seed": 249
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 51,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00249.npz"
+  },
+  {
+   "index": 250,
+   "condition": {
+    "mass": 0.3833,
+    "friction": 0.7553,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00789,
+    "disturb_offset": 9,
+    "disturb_accel": 0.918,
+    "seed": 250
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00250.npz"
+  },
+  {
+   "index": 251,
+   "condition": {
+    "mass": 0.3182,
+    "friction": 0.6735,
+    "transport_speed": 0.8,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00556,
+    "disturb_offset": 10,
+    "disturb_accel": 7.764,
+    "seed": 251
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 51,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00251.npz"
+  },
+  {
+   "index": 252,
+   "condition": {
+    "mass": 0.3045,
+    "friction": 0.5328,
+    "transport_speed": 0.8,
+    "transport_accel": 8.0,
+    "grasp_x_offset": 0.00307,
+    "disturb_offset": 7,
+    "disturb_accel": 4.736,
+    "seed": 252
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 50,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00252.npz"
+  },
+  {
+   "index": 253,
+   "condition": {
+    "mass": 0.4671,
+    "friction": 0.5371,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00797,
+    "disturb_offset": 8,
+    "disturb_accel": 0.63,
+    "seed": 253
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 27,
+   "file": "episode_00253.npz"
+  },
+  {
+   "index": 254,
+   "condition": {
+    "mass": 0.3975,
+    "friction": 0.7564,
+    "transport_speed": 1.2,
+    "transport_accel": 12.0,
+    "grasp_x_offset": 0.00596,
+    "disturb_offset": 9,
+    "disturb_accel": 3.25,
+    "seed": 254
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 46,
+   "loss_step": -1,
+   "first_slip_step": 40,
+   "file": "episode_00254.npz"
+  },
+  {
+   "index": 255,
+   "condition": {
+    "mass": 0.3278,
+    "friction": 0.7864,
+    "transport_speed": 0.8,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00257,
+    "disturb_offset": 3,
+    "disturb_accel": 6.078,
+    "seed": 255
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 51,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00255.npz"
+  },
+  {
+   "index": 256,
+   "condition": {
+    "mass": 0.2013,
+    "friction": 0.7417,
+    "transport_speed": 0.8,
+    "transport_accel": 8.0,
+    "grasp_x_offset": 0.0073,
+    "disturb_offset": 2,
+    "disturb_accel": 7.58,
+    "seed": 256
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 50,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00256.npz"
+  },
+  {
+   "index": 257,
+   "condition": {
+    "mass": 0.214,
+    "friction": 0.7256,
+    "transport_speed": 1.2,
+    "transport_accel": 8.0,
+    "grasp_x_offset": 0.00716,
+    "disturb_offset": 9,
+    "disturb_accel": 5.196,
+    "seed": 257
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 47,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00257.npz"
+  },
+  {
+   "index": 258,
+   "condition": {
+    "mass": 0.279,
+    "friction": 0.6141,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00794,
+    "disturb_offset": 7,
+    "disturb_accel": 2.716,
+    "seed": 258
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00258.npz"
+  },
+  {
+   "index": 259,
+   "condition": {
+    "mass": 0.4716,
+    "friction": 0.6706,
+    "transport_speed": 1.2,
+    "transport_accel": 12.0,
+    "grasp_x_offset": 0.00687,
+    "disturb_offset": 4,
+    "disturb_accel": 2.595,
+    "seed": 259
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 40,
+   "first_slip_step": 38,
+   "file": "episode_00259.npz"
+  },
+  {
+   "index": 260,
+   "condition": {
+    "mass": 0.262,
+    "friction": 0.3634,
+    "transport_speed": 0.8,
+    "transport_accel": 12.0,
+    "grasp_x_offset": -0.00627,
+    "disturb_offset": 6,
+    "disturb_accel": 5.249,
+    "seed": 260
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 41,
+   "first_slip_step": 28,
+   "file": "episode_00260.npz"
+  },
+  {
+   "index": 261,
+   "condition": {
+    "mass": 0.4889,
+    "friction": 0.3789,
+    "transport_speed": 0.8,
+    "transport_accel": 12.0,
+    "grasp_x_offset": -0.00434,
+    "disturb_offset": 8,
+    "disturb_accel": 6.89,
+    "seed": 261
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 26,
+   "file": "episode_00261.npz"
+  },
+  {
+   "index": 262,
+   "condition": {
+    "mass": 0.1543,
+    "friction": 0.4374,
+    "transport_speed": 1.2,
+    "transport_accel": 12.0,
+    "grasp_x_offset": 0.00121,
+    "disturb_offset": 5,
+    "disturb_accel": 0.038,
+    "seed": 262
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 46,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00262.npz"
+  },
+  {
+   "index": 263,
+   "condition": {
+    "mass": 0.2932,
+    "friction": 0.5455,
+    "transport_speed": 0.8,
+    "transport_accel": 12.0,
+    "grasp_x_offset": 0.00289,
+    "disturb_offset": 6,
+    "disturb_accel": 1.232,
+    "seed": 263
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00263.npz"
+  },
+  {
+   "index": 264,
+   "condition": {
+    "mass": 0.2614,
+    "friction": 0.3738,
+    "transport_speed": 0.8,
+    "transport_accel": 12.0,
+    "grasp_x_offset": -0.00122,
+    "disturb_offset": 9,
+    "disturb_accel": 2.282,
+    "seed": 264
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": 50,
+   "first_slip_step": 39,
+   "file": "episode_00264.npz"
+  },
+  {
+   "index": 265,
+   "condition": {
+    "mass": 0.1998,
+    "friction": 0.4371,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00301,
+    "disturb_offset": 1,
+    "disturb_accel": 7.918,
+    "seed": 265
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00265.npz"
+  },
+  {
+   "index": 266,
+   "condition": {
+    "mass": 0.1821,
+    "friction": 0.4244,
+    "transport_speed": 0.8,
+    "transport_accel": 12.0,
+    "grasp_x_offset": 0.00218,
+    "disturb_offset": 3,
+    "disturb_accel": 2.918,
+    "seed": 266
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00266.npz"
+  },
+  {
+   "index": 267,
+   "condition": {
+    "mass": 0.2998,
+    "friction": 0.4789,
+    "transport_speed": 1.2,
+    "transport_accel": 12.0,
+    "grasp_x_offset": -0.005,
+    "disturb_offset": 9,
+    "disturb_accel": 3.038,
+    "seed": 267
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 43,
+   "first_slip_step": 39,
+   "file": "episode_00267.npz"
+  },
+  {
+   "index": 268,
+   "condition": {
+    "mass": 0.3808,
+    "friction": 0.761,
+    "transport_speed": 0.8,
+    "transport_accel": 12.0,
+    "grasp_x_offset": -0.00664,
+    "disturb_offset": 10,
+    "disturb_accel": 6.331,
+    "seed": 268
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": 51,
+   "first_slip_step": -1,
+   "file": "episode_00268.npz"
+  },
+  {
+   "index": 269,
+   "condition": {
+    "mass": 0.3148,
+    "friction": 0.5992,
+    "transport_speed": 1.2,
+    "transport_accel": 12.0,
+    "grasp_x_offset": -0.00711,
+    "disturb_offset": 5,
+    "disturb_accel": 2.562,
+    "seed": 269
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 46,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00269.npz"
+  },
+  {
+   "index": 270,
+   "condition": {
+    "mass": 0.4696,
+    "friction": 0.6194,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00082,
+    "disturb_offset": 6,
+    "disturb_accel": 6.49,
+    "seed": 270
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 41,
+   "first_slip_step": 27,
+   "file": "episode_00270.npz"
+  },
+  {
+   "index": 271,
+   "condition": {
+    "mass": 0.3536,
+    "friction": 0.4406,
+    "transport_speed": 1.2,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.00326,
+    "disturb_offset": 10,
+    "disturb_accel": 5.803,
+    "seed": 271
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 27,
+   "file": "episode_00271.npz"
+  },
+  {
+   "index": 272,
+   "condition": {
+    "mass": 0.3907,
+    "friction": 0.7655,
+    "transport_speed": 1.2,
+    "transport_accel": 12.0,
+    "grasp_x_offset": -0.0018,
+    "disturb_offset": 3,
+    "disturb_accel": 5.251,
+    "seed": 272
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 46,
+   "loss_step": -1,
+   "first_slip_step": 43,
+   "file": "episode_00272.npz"
+  },
+  {
+   "index": 273,
+   "condition": {
+    "mass": 0.1542,
+    "friction": 0.3736,
+    "transport_speed": 0.8,
+    "transport_accel": 8.0,
+    "grasp_x_offset": 0.00117,
+    "disturb_offset": 1,
+    "disturb_accel": 6.3,
+    "seed": 273
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 50,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00273.npz"
+  },
+  {
+   "index": 274,
+   "condition": {
+    "mass": 0.1746,
+    "friction": 0.4937,
+    "transport_speed": 0.8,
+    "transport_accel": 8.0,
+    "grasp_x_offset": 0.00639,
+    "disturb_offset": 1,
+    "disturb_accel": 3.238,
+    "seed": 274
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 50,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00274.npz"
+  },
+  {
+   "index": 275,
+   "condition": {
+    "mass": 0.4727,
+    "friction": 0.6592,
+    "transport_speed": 1.2,
+    "transport_accel": 8.0,
+    "grasp_x_offset": 0.00339,
+    "disturb_offset": 7,
+    "disturb_accel": 4.335,
+    "seed": 275
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 41,
+   "first_slip_step": 39,
+   "file": "episode_00275.npz"
+  },
+  {
+   "index": 276,
+   "condition": {
+    "mass": 0.3136,
+    "friction": 0.7876,
+    "transport_speed": 1.2,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.0015,
+    "disturb_offset": 9,
+    "disturb_accel": 1.538,
+    "seed": 276
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 47,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00276.npz"
+  },
+  {
+   "index": 277,
+   "condition": {
+    "mass": 0.4942,
+    "friction": 0.7828,
+    "transport_speed": 0.8,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.00676,
+    "disturb_offset": 1,
+    "disturb_accel": 5.431,
+    "seed": 277
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 41,
+   "first_slip_step": 39,
+   "file": "episode_00277.npz"
+  },
+  {
+   "index": 278,
+   "condition": {
+    "mass": 0.2263,
+    "friction": 0.6486,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": -0.00165,
+    "disturb_offset": 6,
+    "disturb_accel": 1.972,
+    "seed": 278
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00278.npz"
+  },
+  {
+   "index": 279,
+   "condition": {
+    "mass": 0.4213,
+    "friction": 0.4867,
+    "transport_speed": 0.8,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.00498,
+    "disturb_offset": 10,
+    "disturb_accel": 7.159,
+    "seed": 279
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 27,
+   "file": "episode_00279.npz"
+  },
+  {
+   "index": 280,
+   "condition": {
+    "mass": 0.2037,
+    "friction": 0.4832,
+    "transport_speed": 0.8,
+    "transport_accel": 12.0,
+    "grasp_x_offset": -0.00724,
+    "disturb_offset": 1,
+    "disturb_accel": 1.309,
+    "seed": 280
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00280.npz"
+  },
+  {
+   "index": 281,
+   "condition": {
+    "mass": 0.3317,
+    "friction": 0.7812,
+    "transport_speed": 1.2,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.00197,
+    "disturb_offset": 2,
+    "disturb_accel": 4.065,
+    "seed": 281
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 47,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00281.npz"
+  },
+  {
+   "index": 282,
+   "condition": {
+    "mass": 0.3783,
+    "friction": 0.5013,
+    "transport_speed": 0.8,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00653,
+    "disturb_offset": 7,
+    "disturb_accel": 7.85,
+    "seed": 282
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 40,
+   "first_slip_step": 27,
+   "file": "episode_00282.npz"
+  },
+  {
+   "index": 283,
+   "condition": {
+    "mass": 0.2023,
+    "friction": 0.454,
+    "transport_speed": 0.8,
+    "transport_accel": 12.0,
+    "grasp_x_offset": 0.00405,
+    "disturb_offset": 8,
+    "disturb_accel": 4.104,
+    "seed": 283
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00283.npz"
+  },
+  {
+   "index": 284,
+   "condition": {
+    "mass": 0.1575,
+    "friction": 0.4502,
+    "transport_speed": 0.8,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00628,
+    "disturb_offset": 2,
+    "disturb_accel": 6.14,
+    "seed": 284
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 51,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00284.npz"
+  },
+  {
+   "index": 285,
+   "condition": {
+    "mass": 0.4672,
+    "friction": 0.5269,
+    "transport_speed": 0.8,
+    "transport_accel": 12.0,
+    "grasp_x_offset": 0.00289,
+    "disturb_offset": 10,
+    "disturb_accel": 4.839,
+    "seed": 285
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 27,
+   "file": "episode_00285.npz"
+  },
+  {
+   "index": 286,
+   "condition": {
+    "mass": 0.3077,
+    "friction": 0.549,
+    "transport_speed": 0.8,
+    "transport_accel": 5.0,
+    "grasp_x_offset": -0.00354,
+    "disturb_offset": 5,
+    "disturb_accel": 3.261,
+    "seed": 286
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 51,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00286.npz"
+  },
+  {
+   "index": 287,
+   "condition": {
+    "mass": 0.2418,
+    "friction": 0.3832,
+    "transport_speed": 0.8,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00116,
+    "disturb_offset": 10,
+    "disturb_accel": 2.688,
+    "seed": 287
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 51,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00287.npz"
+  },
+  {
+   "index": 288,
+   "condition": {
+    "mass": 0.4441,
+    "friction": 0.5692,
+    "transport_speed": 1.2,
+    "transport_accel": 12.0,
+    "grasp_x_offset": -0.00536,
+    "disturb_offset": 10,
+    "disturb_accel": 1.882,
+    "seed": 288
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 30,
+   "first_slip_step": 27,
+   "file": "episode_00288.npz"
+  },
+  {
+   "index": 289,
+   "condition": {
+    "mass": 0.4511,
+    "friction": 0.6941,
+    "transport_speed": 0.8,
+    "transport_accel": 8.0,
+    "grasp_x_offset": 0.00694,
+    "disturb_offset": 4,
+    "disturb_accel": 6.883,
+    "seed": 289
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 43,
+   "first_slip_step": 40,
+   "file": "episode_00289.npz"
+  },
+  {
+   "index": 290,
+   "condition": {
+    "mass": 0.2858,
+    "friction": 0.6199,
+    "transport_speed": 0.8,
+    "transport_accel": 12.0,
+    "grasp_x_offset": 0.0033,
+    "disturb_offset": 3,
+    "disturb_accel": 4.789,
+    "seed": 290
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00290.npz"
+  },
+  {
+   "index": 291,
+   "condition": {
+    "mass": 0.4619,
+    "friction": 0.5895,
+    "transport_speed": 0.8,
+    "transport_accel": 8.0,
+    "grasp_x_offset": 0.00393,
+    "disturb_offset": 5,
+    "disturb_accel": 3.632,
+    "seed": 291
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 30,
+   "first_slip_step": 27,
+   "file": "episode_00291.npz"
+  },
+  {
+   "index": 292,
+   "condition": {
+    "mass": 0.3716,
+    "friction": 0.3532,
+    "transport_speed": 1.2,
+    "transport_accel": 12.0,
+    "grasp_x_offset": 0.00738,
+    "disturb_offset": 5,
+    "disturb_accel": 6.534,
+    "seed": 292
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 26,
+   "file": "episode_00292.npz"
+  },
+  {
+   "index": 293,
+   "condition": {
+    "mass": 0.3158,
+    "friction": 0.6809,
+    "transport_speed": 1.2,
+    "transport_accel": 12.0,
+    "grasp_x_offset": -0.00618,
+    "disturb_offset": 5,
+    "disturb_accel": 0.268,
+    "seed": 293
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 46,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00293.npz"
+  },
+  {
+   "index": 294,
+   "condition": {
+    "mass": 0.2719,
+    "friction": 0.7265,
+    "transport_speed": 0.8,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.00622,
+    "disturb_offset": 7,
+    "disturb_accel": 4.223,
+    "seed": 294
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 50,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00294.npz"
+  },
+  {
+   "index": 295,
+   "condition": {
+    "mass": 0.2369,
+    "friction": 0.6374,
+    "transport_speed": 0.8,
+    "transport_accel": 12.0,
+    "grasp_x_offset": -0.0009,
+    "disturb_offset": 3,
+    "disturb_accel": 1.131,
+    "seed": 295
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00295.npz"
+  },
+  {
+   "index": 296,
+   "condition": {
+    "mass": 0.292,
+    "friction": 0.6059,
+    "transport_speed": 0.8,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.00637,
+    "disturb_offset": 1,
+    "disturb_accel": 5.711,
+    "seed": 296
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 50,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00296.npz"
+  },
+  {
+   "index": 297,
+   "condition": {
+    "mass": 0.2021,
+    "friction": 0.3996,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": -0.00144,
+    "disturb_offset": 2,
+    "disturb_accel": 1.959,
+    "seed": 297
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00297.npz"
+  },
+  {
+   "index": 298,
+   "condition": {
+    "mass": 0.23,
+    "friction": 0.6324,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": -0.00459,
+    "disturb_offset": 6,
+    "disturb_accel": 0.942,
+    "seed": 298
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00298.npz"
+  },
+  {
+   "index": 299,
+   "condition": {
+    "mass": 0.228,
+    "friction": 0.7588,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": -0.00083,
+    "disturb_offset": 8,
+    "disturb_accel": 7.756,
+    "seed": 299
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00299.npz"
+  },
+  {
+   "index": 300,
+   "condition": {
+    "mass": 0.2644,
+    "friction": 0.6172,
+    "transport_speed": 0.8,
+    "transport_accel": 5.0,
+    "grasp_x_offset": -0.00065,
+    "disturb_offset": 5,
+    "disturb_accel": 5.766,
+    "seed": 300
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 51,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00300.npz"
+  },
+  {
+   "index": 301,
+   "condition": {
+    "mass": 0.2145,
+    "friction": 0.7487,
+    "transport_speed": 0.8,
+    "transport_accel": 12.0,
+    "grasp_x_offset": 0.0043,
+    "disturb_offset": 9,
+    "disturb_accel": 7.087,
+    "seed": 301
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00301.npz"
+  },
+  {
+   "index": 302,
+   "condition": {
+    "mass": 0.2558,
+    "friction": 0.3733,
+    "transport_speed": 1.2,
+    "transport_accel": 12.0,
+    "grasp_x_offset": 0.00123,
+    "disturb_offset": 10,
+    "disturb_accel": 6.208,
+    "seed": 302
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 41,
+   "first_slip_step": 39,
+   "file": "episode_00302.npz"
+  },
+  {
+   "index": 303,
+   "condition": {
+    "mass": 0.2625,
+    "friction": 0.7784,
+    "transport_speed": 0.8,
+    "transport_accel": 12.0,
+    "grasp_x_offset": 0.00164,
+    "disturb_offset": 10,
+    "disturb_accel": 7.263,
+    "seed": 303
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00303.npz"
+  },
+  {
+   "index": 304,
+   "condition": {
+    "mass": 0.275,
+    "friction": 0.4736,
+    "transport_speed": 1.2,
+    "transport_accel": 12.0,
+    "grasp_x_offset": 0.00094,
+    "disturb_offset": 8,
+    "disturb_accel": 2.79,
+    "seed": 304
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 46,
+   "loss_step": 48,
+   "first_slip_step": 40,
+   "file": "episode_00304.npz"
+  },
+  {
+   "index": 305,
+   "condition": {
+    "mass": 0.153,
+    "friction": 0.4891,
+    "transport_speed": 0.8,
+    "transport_accel": 12.0,
+    "grasp_x_offset": -0.00221,
+    "disturb_offset": 5,
+    "disturb_accel": 4.193,
+    "seed": 305
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00305.npz"
+  },
+  {
+   "index": 306,
+   "condition": {
+    "mass": 0.1603,
+    "friction": 0.777,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": -0.00665,
+    "disturb_offset": 8,
+    "disturb_accel": 5.368,
+    "seed": 306
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00306.npz"
+  },
+  {
+   "index": 307,
+   "condition": {
+    "mass": 0.2623,
+    "friction": 0.762,
+    "transport_speed": 1.2,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.00525,
+    "disturb_offset": 2,
+    "disturb_accel": 6.749,
+    "seed": 307
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 47,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00307.npz"
+  },
+  {
+   "index": 308,
+   "condition": {
+    "mass": 0.3072,
+    "friction": 0.6019,
+    "transport_speed": 1.2,
+    "transport_accel": 12.0,
+    "grasp_x_offset": -0.00039,
+    "disturb_offset": 7,
+    "disturb_accel": 1.791,
+    "seed": 308
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 46,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00308.npz"
+  },
+  {
+   "index": 309,
+   "condition": {
+    "mass": 0.3213,
+    "friction": 0.4265,
+    "transport_speed": 1.2,
+    "transport_accel": 8.0,
+    "grasp_x_offset": 0.00181,
+    "disturb_offset": 3,
+    "disturb_accel": 4.816,
+    "seed": 309
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 40,
+   "first_slip_step": 27,
+   "file": "episode_00309.npz"
+  },
+  {
+   "index": 310,
+   "condition": {
+    "mass": 0.2835,
+    "friction": 0.3541,
+    "transport_speed": 1.2,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.00368,
+    "disturb_offset": 1,
+    "disturb_accel": 4.628,
+    "seed": 310
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 27,
+   "file": "episode_00310.npz"
+  },
+  {
+   "index": 311,
+   "condition": {
+    "mass": 0.46,
+    "friction": 0.6611,
+    "transport_speed": 1.2,
+    "transport_accel": 12.0,
+    "grasp_x_offset": -0.00015,
+    "disturb_offset": 1,
+    "disturb_accel": 7.598,
+    "seed": 311
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 40,
+   "first_slip_step": 39,
+   "file": "episode_00311.npz"
+  },
+  {
+   "index": 312,
+   "condition": {
+    "mass": 0.336,
+    "friction": 0.4136,
+    "transport_speed": 1.2,
+    "transport_accel": 12.0,
+    "grasp_x_offset": 0.00445,
+    "disturb_offset": 10,
+    "disturb_accel": 5.286,
+    "seed": 312
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 27,
+   "file": "episode_00312.npz"
+  },
+  {
+   "index": 313,
+   "condition": {
+    "mass": 0.4478,
+    "friction": 0.5436,
+    "transport_speed": 1.2,
+    "transport_accel": 8.0,
+    "grasp_x_offset": 0.00633,
+    "disturb_offset": 4,
+    "disturb_accel": 0.686,
+    "seed": 313
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 27,
+   "file": "episode_00313.npz"
+  },
+  {
+   "index": 314,
+   "condition": {
+    "mass": 0.4892,
+    "friction": 0.4303,
+    "transport_speed": 0.8,
+    "transport_accel": 8.0,
+    "grasp_x_offset": 0.00483,
+    "disturb_offset": 3,
+    "disturb_accel": 2.983,
+    "seed": 314
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 27,
+   "file": "episode_00314.npz"
+  },
+  {
+   "index": 315,
+   "condition": {
+    "mass": 0.3771,
+    "friction": 0.4988,
+    "transport_speed": 0.8,
+    "transport_accel": 12.0,
+    "grasp_x_offset": -0.00329,
+    "disturb_offset": 9,
+    "disturb_accel": 4.719,
+    "seed": 315
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 40,
+   "first_slip_step": 27,
+   "file": "episode_00315.npz"
+  },
+  {
+   "index": 316,
+   "condition": {
+    "mass": 0.2734,
+    "friction": 0.3993,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00506,
+    "disturb_offset": 4,
+    "disturb_accel": 2.762,
+    "seed": 316
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 46,
+   "first_slip_step": 42,
+   "file": "episode_00316.npz"
+  },
+  {
+   "index": 317,
+   "condition": {
+    "mass": 0.461,
+    "friction": 0.7621,
+    "transport_speed": 0.8,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.00623,
+    "disturb_offset": 6,
+    "disturb_accel": 2.074,
+    "seed": 317
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 50,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00317.npz"
+  },
+  {
+   "index": 318,
+   "condition": {
+    "mass": 0.427,
+    "friction": 0.5207,
+    "transport_speed": 0.8,
+    "transport_accel": 12.0,
+    "grasp_x_offset": -0.00193,
+    "disturb_offset": 1,
+    "disturb_accel": 5.244,
+    "seed": 318
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 27,
+   "file": "episode_00318.npz"
+  },
+  {
+   "index": 319,
+   "condition": {
+    "mass": 0.2476,
+    "friction": 0.5962,
+    "transport_speed": 1.2,
+    "transport_accel": 12.0,
+    "grasp_x_offset": -0.00403,
+    "disturb_offset": 9,
+    "disturb_accel": 2.362,
+    "seed": 319
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 46,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00319.npz"
+  },
+  {
+   "index": 320,
+   "condition": {
+    "mass": 0.2957,
+    "friction": 0.5133,
+    "transport_speed": 1.2,
+    "transport_accel": 12.0,
+    "grasp_x_offset": 0.00235,
+    "disturb_offset": 3,
+    "disturb_accel": 7.574,
+    "seed": 320
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 42,
+   "first_slip_step": 40,
+   "file": "episode_00320.npz"
+  },
+  {
+   "index": 321,
+   "condition": {
+    "mass": 0.2907,
+    "friction": 0.6588,
+    "transport_speed": 1.2,
+    "transport_accel": 12.0,
+    "grasp_x_offset": 0.00534,
+    "disturb_offset": 2,
+    "disturb_accel": 2.625,
+    "seed": 321
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 46,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00321.npz"
+  },
+  {
+   "index": 322,
+   "condition": {
+    "mass": 0.3173,
+    "friction": 0.3624,
+    "transport_speed": 0.8,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00503,
+    "disturb_offset": 9,
+    "disturb_accel": 0.039,
+    "seed": 322
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 26,
+   "file": "episode_00322.npz"
+  },
+  {
+   "index": 323,
+   "condition": {
+    "mass": 0.4166,
+    "friction": 0.6321,
+    "transport_speed": 1.2,
+    "transport_accel": 8.0,
+    "grasp_x_offset": 0.00689,
+    "disturb_offset": 10,
+    "disturb_accel": 3.374,
+    "seed": 323
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 47,
+   "loss_step": 48,
+   "first_slip_step": 40,
+   "file": "episode_00323.npz"
+  },
+  {
+   "index": 324,
+   "condition": {
+    "mass": 0.1889,
+    "friction": 0.5388,
+    "transport_speed": 0.8,
+    "transport_accel": 8.0,
+    "grasp_x_offset": 0.0,
+    "disturb_offset": 9,
+    "disturb_accel": 2.61,
+    "seed": 324
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 50,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00324.npz"
+  },
+  {
+   "index": 325,
+   "condition": {
+    "mass": 0.1724,
+    "friction": 0.6886,
+    "transport_speed": 0.8,
+    "transport_accel": 12.0,
+    "grasp_x_offset": 0.00289,
+    "disturb_offset": 3,
+    "disturb_accel": 2.214,
+    "seed": 325
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00325.npz"
+  },
+  {
+   "index": 326,
+   "condition": {
+    "mass": 0.4445,
+    "friction": 0.4572,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.0045,
+    "disturb_offset": 8,
+    "disturb_accel": 1.397,
+    "seed": 326
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 27,
+   "file": "episode_00326.npz"
+  },
+  {
+   "index": 327,
+   "condition": {
+    "mass": 0.3498,
+    "friction": 0.3781,
+    "transport_speed": 0.8,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.00771,
+    "disturb_offset": 6,
+    "disturb_accel": 3.427,
+    "seed": 327
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 27,
+   "file": "episode_00327.npz"
+  },
+  {
+   "index": 328,
+   "condition": {
+    "mass": 0.2954,
+    "friction": 0.3884,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00139,
+    "disturb_offset": 4,
+    "disturb_accel": 5.854,
+    "seed": 328
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 41,
+   "first_slip_step": 27,
+   "file": "episode_00328.npz"
+  },
+  {
+   "index": 329,
+   "condition": {
+    "mass": 0.279,
+    "friction": 0.4683,
+    "transport_speed": 0.8,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.00764,
+    "disturb_offset": 10,
+    "disturb_accel": 5.016,
+    "seed": 329
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 50,
+   "loss_step": 51,
+   "first_slip_step": -1,
+   "file": "episode_00329.npz"
+  },
+  {
+   "index": 330,
+   "condition": {
+    "mass": 0.1563,
+    "friction": 0.5219,
+    "transport_speed": 0.8,
+    "transport_accel": 5.0,
+    "grasp_x_offset": -0.00671,
+    "disturb_offset": 6,
+    "disturb_accel": 4.575,
+    "seed": 330
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 51,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00330.npz"
+  },
+  {
+   "index": 331,
+   "condition": {
+    "mass": 0.1771,
+    "friction": 0.7897,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": -0.00013,
+    "disturb_offset": 2,
+    "disturb_accel": 0.244,
+    "seed": 331
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00331.npz"
+  },
+  {
+   "index": 332,
+   "condition": {
+    "mass": 0.292,
+    "friction": 0.5712,
+    "transport_speed": 1.2,
+    "transport_accel": 12.0,
+    "grasp_x_offset": 0.00284,
+    "disturb_offset": 4,
+    "disturb_accel": 1.474,
+    "seed": 332
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 46,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00332.npz"
+  },
+  {
+   "index": 333,
+   "condition": {
+    "mass": 0.1658,
+    "friction": 0.4978,
+    "transport_speed": 0.8,
+    "transport_accel": 5.0,
+    "grasp_x_offset": -0.00519,
+    "disturb_offset": 1,
+    "disturb_accel": 5.206,
+    "seed": 333
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 51,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00333.npz"
+  },
+  {
+   "index": 334,
+   "condition": {
+    "mass": 0.2205,
+    "friction": 0.5183,
+    "transport_speed": 0.8,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.0066,
+    "disturb_offset": 9,
+    "disturb_accel": 0.757,
+    "seed": 334
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 51,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00334.npz"
+  },
+  {
+   "index": 335,
+   "condition": {
+    "mass": 0.3896,
+    "friction": 0.5713,
+    "transport_speed": 1.2,
+    "transport_accel": 12.0,
+    "grasp_x_offset": -0.00514,
+    "disturb_offset": 9,
+    "disturb_accel": 1.441,
+    "seed": 335
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 41,
+   "first_slip_step": 39,
+   "file": "episode_00335.npz"
+  },
+  {
+   "index": 336,
+   "condition": {
+    "mass": 0.4839,
+    "friction": 0.4437,
+    "transport_speed": 1.2,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.00532,
+    "disturb_offset": 8,
+    "disturb_accel": 2.644,
+    "seed": 336
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 27,
+   "file": "episode_00336.npz"
+  },
+  {
+   "index": 337,
+   "condition": {
+    "mass": 0.3627,
+    "friction": 0.5881,
+    "transport_speed": 0.8,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00493,
+    "disturb_offset": 10,
+    "disturb_accel": 5.948,
+    "seed": 337
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 50,
+   "first_slip_step": 49,
+   "file": "episode_00337.npz"
+  },
+  {
+   "index": 338,
+   "condition": {
+    "mass": 0.2539,
+    "friction": 0.4863,
+    "transport_speed": 0.8,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.00331,
+    "disturb_offset": 5,
+    "disturb_accel": 1.573,
+    "seed": 338
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 50,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00338.npz"
+  },
+  {
+   "index": 339,
+   "condition": {
+    "mass": 0.2827,
+    "friction": 0.5013,
+    "transport_speed": 0.8,
+    "transport_accel": 12.0,
+    "grasp_x_offset": 0.00168,
+    "disturb_offset": 10,
+    "disturb_accel": 6.959,
+    "seed": 339
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": 50,
+   "first_slip_step": -1,
+   "file": "episode_00339.npz"
+  },
+  {
+   "index": 340,
+   "condition": {
+    "mass": 0.1845,
+    "friction": 0.3676,
+    "transport_speed": 0.8,
+    "transport_accel": 12.0,
+    "grasp_x_offset": -0.001,
+    "disturb_offset": 4,
+    "disturb_accel": 2.182,
+    "seed": 340
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00340.npz"
+  },
+  {
+   "index": 341,
+   "condition": {
+    "mass": 0.3016,
+    "friction": 0.4097,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00079,
+    "disturb_offset": 10,
+    "disturb_accel": 0.791,
+    "seed": 341
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 48,
+   "first_slip_step": 29,
+   "file": "episode_00341.npz"
+  },
+  {
+   "index": 342,
+   "condition": {
+    "mass": 0.4481,
+    "friction": 0.5435,
+    "transport_speed": 1.2,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.00548,
+    "disturb_offset": 1,
+    "disturb_accel": 3.984,
+    "seed": 342
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 27,
+   "file": "episode_00342.npz"
+  },
+  {
+   "index": 343,
+   "condition": {
+    "mass": 0.324,
+    "friction": 0.7189,
+    "transport_speed": 0.8,
+    "transport_accel": 12.0,
+    "grasp_x_offset": -0.00316,
+    "disturb_offset": 5,
+    "disturb_accel": 2.142,
+    "seed": 343
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00343.npz"
+  },
+  {
+   "index": 344,
+   "condition": {
+    "mass": 0.2577,
+    "friction": 0.5626,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": -0.0075,
+    "disturb_offset": 4,
+    "disturb_accel": 4.625,
+    "seed": 344
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00344.npz"
+  },
+  {
+   "index": 345,
+   "condition": {
+    "mass": 0.2447,
+    "friction": 0.4993,
+    "transport_speed": 0.8,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.00645,
+    "disturb_offset": 3,
+    "disturb_accel": 1.443,
+    "seed": 345
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 50,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00345.npz"
+  },
+  {
+   "index": 346,
+   "condition": {
+    "mass": 0.2391,
+    "friction": 0.7277,
+    "transport_speed": 0.8,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00525,
+    "disturb_offset": 4,
+    "disturb_accel": 7.794,
+    "seed": 346
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 51,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00346.npz"
+  },
+  {
+   "index": 347,
+   "condition": {
+    "mass": 0.4138,
+    "friction": 0.4018,
+    "transport_speed": 1.2,
+    "transport_accel": 8.0,
+    "grasp_x_offset": 0.00547,
+    "disturb_offset": 10,
+    "disturb_accel": 3.549,
+    "seed": 347
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 26,
+   "file": "episode_00347.npz"
+  },
+  {
+   "index": 348,
+   "condition": {
+    "mass": 0.3018,
+    "friction": 0.3639,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00344,
+    "disturb_offset": 8,
+    "disturb_accel": 7.934,
+    "seed": 348
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 27,
+   "file": "episode_00348.npz"
+  },
+  {
+   "index": 349,
+   "condition": {
+    "mass": 0.1576,
+    "friction": 0.7959,
+    "transport_speed": 0.8,
+    "transport_accel": 5.0,
+    "grasp_x_offset": -0.00063,
+    "disturb_offset": 3,
+    "disturb_accel": 4.364,
+    "seed": 349
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 51,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00349.npz"
+  },
+  {
+   "index": 350,
+   "condition": {
+    "mass": 0.2513,
+    "friction": 0.4492,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00517,
+    "disturb_offset": 3,
+    "disturb_accel": 1.004,
+    "seed": 350
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00350.npz"
+  },
+  {
+   "index": 351,
+   "condition": {
+    "mass": 0.4509,
+    "friction": 0.6742,
+    "transport_speed": 1.2,
+    "transport_accel": 12.0,
+    "grasp_x_offset": -0.0018,
+    "disturb_offset": 8,
+    "disturb_accel": 0.461,
+    "seed": 351
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 41,
+   "first_slip_step": 39,
+   "file": "episode_00351.npz"
+  },
+  {
+   "index": 352,
+   "condition": {
+    "mass": 0.3916,
+    "friction": 0.783,
+    "transport_speed": 1.2,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.00426,
+    "disturb_offset": 10,
+    "disturb_accel": 0.973,
+    "seed": 352
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 47,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00352.npz"
+  },
+  {
+   "index": 353,
+   "condition": {
+    "mass": 0.4013,
+    "friction": 0.6528,
+    "transport_speed": 1.2,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.00786,
+    "disturb_offset": 5,
+    "disturb_accel": 0.483,
+    "seed": 353
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 47,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00353.npz"
+  },
+  {
+   "index": 354,
+   "condition": {
+    "mass": 0.3887,
+    "friction": 0.6616,
+    "transport_speed": 0.8,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.00436,
+    "disturb_offset": 9,
+    "disturb_accel": 0.844,
+    "seed": 354
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 50,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00354.npz"
+  },
+  {
+   "index": 355,
+   "condition": {
+    "mass": 0.3697,
+    "friction": 0.6075,
+    "transport_speed": 1.2,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.00449,
+    "disturb_offset": 4,
+    "disturb_accel": 5.797,
+    "seed": 355
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 44,
+   "first_slip_step": 42,
+   "file": "episode_00355.npz"
+  },
+  {
+   "index": 356,
+   "condition": {
+    "mass": 0.2133,
+    "friction": 0.4208,
+    "transport_speed": 0.8,
+    "transport_accel": 8.0,
+    "grasp_x_offset": 0.00257,
+    "disturb_offset": 2,
+    "disturb_accel": 2.098,
+    "seed": 356
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 50,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00356.npz"
+  },
+  {
+   "index": 357,
+   "condition": {
+    "mass": 0.1845,
+    "friction": 0.7612,
+    "transport_speed": 0.8,
+    "transport_accel": 5.0,
+    "grasp_x_offset": -0.00238,
+    "disturb_offset": 1,
+    "disturb_accel": 1.255,
+    "seed": 357
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 51,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00357.npz"
+  },
+  {
+   "index": 358,
+   "condition": {
+    "mass": 0.3134,
+    "friction": 0.7581,
+    "transport_speed": 0.8,
+    "transport_accel": 12.0,
+    "grasp_x_offset": -0.00224,
+    "disturb_offset": 6,
+    "disturb_accel": 5.64,
+    "seed": 358
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00358.npz"
+  },
+  {
+   "index": 359,
+   "condition": {
+    "mass": 0.3397,
+    "friction": 0.6741,
+    "transport_speed": 0.8,
+    "transport_accel": 12.0,
+    "grasp_x_offset": -0.00523,
+    "disturb_offset": 1,
+    "disturb_accel": 2.559,
+    "seed": 359
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00359.npz"
+  },
+  {
+   "index": 360,
+   "condition": {
+    "mass": 0.3133,
+    "friction": 0.6063,
+    "transport_speed": 1.2,
+    "transport_accel": 8.0,
+    "grasp_x_offset": 0.00069,
+    "disturb_offset": 6,
+    "disturb_accel": 3.34,
+    "seed": 360
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 47,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00360.npz"
+  },
+  {
+   "index": 361,
+   "condition": {
+    "mass": 0.2476,
+    "friction": 0.5832,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00399,
+    "disturb_offset": 2,
+    "disturb_accel": 7.623,
+    "seed": 361
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00361.npz"
+  },
+  {
+   "index": 362,
+   "condition": {
+    "mass": 0.1689,
+    "friction": 0.702,
+    "transport_speed": 0.8,
+    "transport_accel": 5.0,
+    "grasp_x_offset": -0.00262,
+    "disturb_offset": 3,
+    "disturb_accel": 7.753,
+    "seed": 362
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 51,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00362.npz"
+  },
+  {
+   "index": 363,
+   "condition": {
+    "mass": 0.3467,
+    "friction": 0.3867,
+    "transport_speed": 0.8,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00764,
+    "disturb_offset": 4,
+    "disturb_accel": 0.48,
+    "seed": 363
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 27,
+   "file": "episode_00363.npz"
+  },
+  {
+   "index": 364,
+   "condition": {
+    "mass": 0.4713,
+    "friction": 0.4758,
+    "transport_speed": 0.8,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00199,
+    "disturb_offset": 3,
+    "disturb_accel": 2.931,
+    "seed": 364
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 27,
+   "file": "episode_00364.npz"
+  },
+  {
+   "index": 365,
+   "condition": {
+    "mass": 0.2713,
+    "friction": 0.4681,
+    "transport_speed": 1.2,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.00692,
+    "disturb_offset": 4,
+    "disturb_accel": 4.042,
+    "seed": 365
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 47,
+   "loss_step": -1,
+   "first_slip_step": 44,
+   "file": "episode_00365.npz"
+  },
+  {
+   "index": 366,
+   "condition": {
+    "mass": 0.2695,
+    "friction": 0.4248,
+    "transport_speed": 1.2,
+    "transport_accel": 12.0,
+    "grasp_x_offset": 0.00629,
+    "disturb_offset": 3,
+    "disturb_accel": 1.084,
+    "seed": 366
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 42,
+   "first_slip_step": 39,
+   "file": "episode_00366.npz"
+  },
+  {
+   "index": 367,
+   "condition": {
+    "mass": 0.4697,
+    "friction": 0.534,
+    "transport_speed": 1.2,
+    "transport_accel": 12.0,
+    "grasp_x_offset": -0.00666,
+    "disturb_offset": 10,
+    "disturb_accel": 7.87,
+    "seed": 367
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 27,
+   "file": "episode_00367.npz"
+  },
+  {
+   "index": 368,
+   "condition": {
+    "mass": 0.1839,
+    "friction": 0.6854,
+    "transport_speed": 0.8,
+    "transport_accel": 12.0,
+    "grasp_x_offset": 0.00411,
+    "disturb_offset": 5,
+    "disturb_accel": 5.983,
+    "seed": 368
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00368.npz"
+  },
+  {
+   "index": 369,
+   "condition": {
+    "mass": 0.3295,
+    "friction": 0.3712,
+    "transport_speed": 0.8,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.00352,
+    "disturb_offset": 1,
+    "disturb_accel": 6.78,
+    "seed": 369
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 26,
+   "file": "episode_00369.npz"
+  },
+  {
+   "index": 370,
+   "condition": {
+    "mass": 0.299,
+    "friction": 0.4733,
+    "transport_speed": 1.2,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.00272,
+    "disturb_offset": 2,
+    "disturb_accel": 1.586,
+    "seed": 370
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 47,
+   "loss_step": -1,
+   "first_slip_step": 40,
+   "file": "episode_00370.npz"
+  },
+  {
+   "index": 371,
+   "condition": {
+    "mass": 0.273,
+    "friction": 0.4246,
+    "transport_speed": 0.8,
+    "transport_accel": 5.0,
+    "grasp_x_offset": -0.00197,
+    "disturb_offset": 6,
+    "disturb_accel": 0.315,
+    "seed": 371
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 51,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00371.npz"
+  },
+  {
+   "index": 372,
+   "condition": {
+    "mass": 0.2256,
+    "friction": 0.5653,
+    "transport_speed": 0.8,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00612,
+    "disturb_offset": 9,
+    "disturb_accel": 5.183,
+    "seed": 372
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 51,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00372.npz"
+  },
+  {
+   "index": 373,
+   "condition": {
+    "mass": 0.4513,
+    "friction": 0.7644,
+    "transport_speed": 0.8,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.00155,
+    "disturb_offset": 5,
+    "disturb_accel": 0.285,
+    "seed": 373
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 50,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00373.npz"
+  },
+  {
+   "index": 374,
+   "condition": {
+    "mass": 0.3126,
+    "friction": 0.6425,
+    "transport_speed": 0.8,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.00541,
+    "disturb_offset": 3,
+    "disturb_accel": 1.299,
+    "seed": 374
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 50,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00374.npz"
+  },
+  {
+   "index": 375,
+   "condition": {
+    "mass": 0.3453,
+    "friction": 0.5556,
+    "transport_speed": 0.8,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.00539,
+    "disturb_offset": 10,
+    "disturb_accel": 5.082,
+    "seed": 375
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 50,
+   "loss_step": 50,
+   "first_slip_step": 48,
+   "file": "episode_00375.npz"
+  },
+  {
+   "index": 376,
+   "condition": {
+    "mass": 0.2198,
+    "friction": 0.5383,
+    "transport_speed": 0.8,
+    "transport_accel": 12.0,
+    "grasp_x_offset": -5e-05,
+    "disturb_offset": 7,
+    "disturb_accel": 7.113,
+    "seed": 376
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00376.npz"
+  },
+  {
+   "index": 377,
+   "condition": {
+    "mass": 0.4552,
+    "friction": 0.5221,
+    "transport_speed": 0.8,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.00251,
+    "disturb_offset": 1,
+    "disturb_accel": 1.493,
+    "seed": 377
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 27,
+   "file": "episode_00377.npz"
+  },
+  {
+   "index": 378,
+   "condition": {
+    "mass": 0.4107,
+    "friction": 0.6374,
+    "transport_speed": 1.2,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.00774,
+    "disturb_offset": 8,
+    "disturb_accel": 0.108,
+    "seed": 378
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 47,
+   "loss_step": 49,
+   "first_slip_step": 40,
+   "file": "episode_00378.npz"
+  },
+  {
+   "index": 379,
+   "condition": {
+    "mass": 0.3346,
+    "friction": 0.5442,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00624,
+    "disturb_offset": 3,
+    "disturb_accel": 2.744,
+    "seed": 379
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00379.npz"
+  },
+  {
+   "index": 380,
+   "condition": {
+    "mass": 0.3478,
+    "friction": 0.4088,
+    "transport_speed": 0.8,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00544,
+    "disturb_offset": 6,
+    "disturb_accel": 1.082,
+    "seed": 380
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 27,
+   "file": "episode_00380.npz"
+  },
+  {
+   "index": 381,
+   "condition": {
+    "mass": 0.3799,
+    "friction": 0.4467,
+    "transport_speed": 0.8,
+    "transport_accel": 5.0,
+    "grasp_x_offset": -0.00681,
+    "disturb_offset": 8,
+    "disturb_accel": 0.249,
+    "seed": 381
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 27,
+   "file": "episode_00381.npz"
+  },
+  {
+   "index": 382,
+   "condition": {
+    "mass": 0.2827,
+    "friction": 0.7401,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": -0.00792,
+    "disturb_offset": 2,
+    "disturb_accel": 3.591,
+    "seed": 382
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00382.npz"
+  },
+  {
+   "index": 383,
+   "condition": {
+    "mass": 0.3033,
+    "friction": 0.4534,
+    "transport_speed": 0.8,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00563,
+    "disturb_offset": 8,
+    "disturb_accel": 3.631,
+    "seed": 383
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 49,
+   "first_slip_step": 47,
+   "file": "episode_00383.npz"
+  },
+  {
+   "index": 384,
+   "condition": {
+    "mass": 0.4741,
+    "friction": 0.6725,
+    "transport_speed": 0.8,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00705,
+    "disturb_offset": 10,
+    "disturb_accel": 5.026,
+    "seed": 384
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 49,
+   "first_slip_step": 39,
+   "file": "episode_00384.npz"
+  },
+  {
+   "index": 385,
+   "condition": {
+    "mass": 0.2114,
+    "friction": 0.5846,
+    "transport_speed": 0.8,
+    "transport_accel": 8.0,
+    "grasp_x_offset": 0.00248,
+    "disturb_offset": 3,
+    "disturb_accel": 2.447,
+    "seed": 385
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 50,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00385.npz"
+  },
+  {
+   "index": 386,
+   "condition": {
+    "mass": 0.4989,
+    "friction": 0.399,
+    "transport_speed": 0.8,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.00506,
+    "disturb_offset": 7,
+    "disturb_accel": 6.883,
+    "seed": 386
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 26,
+   "file": "episode_00386.npz"
+  },
+  {
+   "index": 387,
+   "condition": {
+    "mass": 0.3254,
+    "friction": 0.3901,
+    "transport_speed": 0.8,
+    "transport_accel": 12.0,
+    "grasp_x_offset": -0.00089,
+    "disturb_offset": 8,
+    "disturb_accel": 0.661,
+    "seed": 387
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 27,
+   "file": "episode_00387.npz"
+  },
+  {
+   "index": 388,
+   "condition": {
+    "mass": 0.3196,
+    "friction": 0.5505,
+    "transport_speed": 1.2,
+    "transport_accel": 8.0,
+    "grasp_x_offset": -0.00105,
+    "disturb_offset": 9,
+    "disturb_accel": 5.631,
+    "seed": 388
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 47,
+   "loss_step": 48,
+   "first_slip_step": -1,
+   "file": "episode_00388.npz"
+  },
+  {
+   "index": 389,
+   "condition": {
+    "mass": 0.4963,
+    "friction": 0.6009,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00339,
+    "disturb_offset": 5,
+    "disturb_accel": 7.311,
+    "seed": 389
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 27,
+   "file": "episode_00389.npz"
+  },
+  {
+   "index": 390,
+   "condition": {
+    "mass": 0.1581,
+    "friction": 0.3662,
+    "transport_speed": 1.2,
+    "transport_accel": 12.0,
+    "grasp_x_offset": 0.00074,
+    "disturb_offset": 9,
+    "disturb_accel": 5.283,
+    "seed": 390
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 46,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00390.npz"
+  },
+  {
+   "index": 391,
+   "condition": {
+    "mass": 0.1838,
+    "friction": 0.3978,
+    "transport_speed": 0.8,
+    "transport_accel": 8.0,
+    "grasp_x_offset": 0.00262,
+    "disturb_offset": 5,
+    "disturb_accel": 6.561,
+    "seed": 391
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 50,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00391.npz"
+  },
+  {
+   "index": 392,
+   "condition": {
+    "mass": 0.4489,
+    "friction": 0.5241,
+    "transport_speed": 0.8,
+    "transport_accel": 12.0,
+    "grasp_x_offset": -0.00577,
+    "disturb_offset": 6,
+    "disturb_accel": 1.853,
+    "seed": 392
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 27,
+   "file": "episode_00392.npz"
+  },
+  {
+   "index": 393,
+   "condition": {
+    "mass": 0.3979,
+    "friction": 0.5612,
+    "transport_speed": 1.2,
+    "transport_accel": 12.0,
+    "grasp_x_offset": -0.00729,
+    "disturb_offset": 1,
+    "disturb_accel": 2.367,
+    "seed": 393
+   },
+   "outcome": "lost",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": -1,
+   "loss_step": 40,
+   "first_slip_step": 29,
+   "file": "episode_00393.npz"
+  },
+  {
+   "index": 394,
+   "condition": {
+    "mass": 0.1841,
+    "friction": 0.6596,
+    "transport_speed": 1.2,
+    "transport_accel": 8.0,
+    "grasp_x_offset": 0.0023,
+    "disturb_offset": 10,
+    "disturb_accel": 0.38,
+    "seed": 394
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 47,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00394.npz"
+  },
+  {
+   "index": 395,
+   "condition": {
+    "mass": 0.2951,
+    "friction": 0.6573,
+    "transport_speed": 1.2,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00714,
+    "disturb_offset": 10,
+    "disturb_accel": 3.062,
+    "seed": 395
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 49,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00395.npz"
+  },
+  {
+   "index": 396,
+   "condition": {
+    "mass": 0.3517,
+    "friction": 0.7703,
+    "transport_speed": 0.8,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00762,
+    "disturb_offset": 4,
+    "disturb_accel": 6.795,
+    "seed": 396
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 51,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00396.npz"
+  },
+  {
+   "index": 397,
+   "condition": {
+    "mass": 0.2087,
+    "friction": 0.7711,
+    "transport_speed": 0.8,
+    "transport_accel": 5.0,
+    "grasp_x_offset": 0.00245,
+    "disturb_offset": 8,
+    "disturb_accel": 1.384,
+    "seed": 397
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 51,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00397.npz"
+  },
+  {
+   "index": 398,
+   "condition": {
+    "mass": 0.3034,
+    "friction": 0.6136,
+    "transport_speed": 0.8,
+    "transport_accel": 8.0,
+    "grasp_x_offset": 0.00629,
+    "disturb_offset": 1,
+    "disturb_accel": 0.712,
+    "seed": 398
+   },
+   "outcome": "placed",
+   "acquisition_step": 24,
+   "transport_start_step": 37,
+   "lower_start_step": 50,
+   "loss_step": -1,
+   "first_slip_step": -1,
+   "file": "episode_00398.npz"
+  },
+  {
+   "index": 399,
+   "condition": {
+    "mass": 0.4564,
+    "friction": 0.4901,
+    "transport_speed": 1.2,
+    "transport_accel": 12.0,
+    "grasp_x_offset": 0.00229,
+    "disturb_offset": 2,
+    "disturb_accel": 6.464,
+    "seed": 399
+   },
+   "outcome": "acquisition_failed",
+   "acquisition_step": 24,
+   "transport_start_step": -1,
+   "lower_start_step": -1,
+   "loss_step": 29,
+   "first_slip_step": 27,
+   "file": "episode_00399.npz"
+  }
+ ]
+}
