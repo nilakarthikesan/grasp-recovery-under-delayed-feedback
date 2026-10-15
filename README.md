@@ -19,7 +19,9 @@ does not.
 * Pilot results: [results/pilot_v1/report.json](results/pilot_v1/report.json)
   (summary in §11 of the design document); per-episode, per-cell outcomes for
   every supervisor in
-  [results/pilot_v1/episode_cell_outcomes.csv](results/pilot_v1/episode_cell_outcomes.csv)
+  [results/pilot_v1/episode_cell_outcomes.csv](results/pilot_v1/episode_cell_outcomes.csv);
+  all episode-clustered intervals, pooled / per delay / per age / per cell, in
+  [results/pilot_v1/intervals.md](results/pilot_v1/intervals.md)
 
 ## Headline findings (pilot, 94 held-out episodes × 12 timing cells)
 
@@ -68,6 +70,7 @@ pytest -q                                            # ~15 s
 python scripts/collect_branches.py --n 400 --seed 0 --workers 9 --out runs/pilot_v1/branches   # ~6 min on 9 cores
 python scripts/run_pilot.py --data runs/pilot_v1/branches --out results/pilot_v1
 python scripts/verify_lookup.py --data runs/pilot_v1/branches --n 60
+python scripts/export_intervals.py --csv results/pilot_v1/episode_cell_outcomes.csv   # clustered CIs from the CSV alone
 python scripts/make_figures.py --report results/pilot_v1/report.json --out paper/figures
 cd paper && tectonic main.tex
 ```
